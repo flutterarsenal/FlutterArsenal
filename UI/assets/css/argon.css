@@ -18794,3 +18794,11 @@ html:not([dir='rtl']) .noUi-horizontal .noUi-handle
     right: 10px;
     left: auto;
 }
+
+.star-checked {
+    color: #324cdd;
+  }
+
+.star-unchecked {
+    color: #5e72e4;
+  }
