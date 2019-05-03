@@ -8,10 +8,10 @@
 
         .card-profile-image {
             position: relative;
-            //min-height: 130px;
+            // min-height: 130px;
 
             img {
-                max-width: 180px;
+                max-width: 180px !important;
                 border-radius: $border-radius;
                 @extend .shadow;
                 transform: translate(-50%,-30%);

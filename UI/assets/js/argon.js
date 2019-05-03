@@ -163,6 +163,5 @@ $(document).ready(function() {
 
     $(function(){
         $('#header').load('http://localhost:8000/header.html');
-        alert( "Load was performed." );
     });
  });

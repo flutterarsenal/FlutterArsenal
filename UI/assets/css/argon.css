@@ -9829,6 +9829,11 @@ button.bg-darker:focus
     margin-bottom: 8rem !important;
 }
 
+.mt-xxl
+{
+    margin-top: 10rem !important;
+}
+
 .ml-xl,
 .mx-xl
 {
@@ -18801,4 +18806,12 @@ html:not([dir='rtl']) .noUi-horizontal .noUi-handle
 
 .star-unchecked {
     color: #5e72e4;
+  }
+
+  .star-checked-white {
+    color: #ffffff;
+  }
+
+.star-unchecked-white {
+    color: #ffffff2a;
   }
