@@ -1,4 +1,4 @@
-/*!
+ /*!
 
 =========================================================
 * Argon Design System - v1.0.1
@@ -16,7 +16,7 @@
 
 */
  
-"use strict";
+ "use strict";
 $(document).ready(function() {
 
     // Collapse navigation
@@ -160,4 +160,9 @@ $(document).ready(function() {
 
         event.preventDefault();
     });
- });   
+
+    $(function(){
+        $('#header').load('http://localhost:8000/header.html');
+        alert( "Load was performed." );
+    });
+ });

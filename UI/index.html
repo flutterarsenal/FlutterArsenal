@@ -21,109 +21,18 @@
 
   <!-- BrickLayer CSS -->
   <link type="text/css" href="../UI/assets/css/bricklayer.min.css" rel="stylesheet">
-  <link type="text/css" href="../UI/assets/css/bricklayerCards.css" rel="stylesheet">
-
 
 
 
 </head>
 <body>
 
-  <header class="header-global">
-    <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom">
-      <div class="container-fluid mx-5">
-        <a class="navbar-brand mr-lg-5" href="./index.html">
-          <img src="./assets/img/brand/white.png">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse collapse" id="navbar_global">
-          <div class="navbar-collapse-header">
-            <div class="row">
-              <div class="col-6 collapse-brand">
-                <a href="./index.html">
-                  <img src="./assets/img/brand/white.png">
-                </a>
-              </div>
-              <div class="col-6 collapse-close">
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
-                  <span></span>
-                  <span></span>
-                </button>
-              </div>
-            </div>
-          </div>
-          <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
-            <li class="nav-item">
-                <a class="nav-link" href="#" role="button">
-                    <span class="nav-link-inner--text ">Home</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#" role="button">
-                    <span class="nav-link-inner--text ">Top Projects</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#" role="button">
-                    <span class="nav-link-inner--text ">Events</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#" role="button">
-                    <span class="nav-link-inner--text ">Flutter</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#" role="button">
-                    <span class="nav-link-inner--text ">Contribute</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                  <a class="nav-link" href="#" role="button">
-                      <span class="nav-link-inner--text ">Contact</span>
-                  </a>
-            </li>
-          </ul>
-          <ul class="navbar-nav align-items-lg-center ml-lg-auto">
-            <li class="nav-item">
-              <a class="nav-link nav-link-icon" href="https://www.facebook.com/flutterarsenal" target="_blank" data-toggle="tooltip" title="Like us on Facebook">
-                <i class="fa fa-facebook-square"></i>
-                <span class="nav-link-inner--text d-lg-none">Facebook</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-icon" href="https://www.instagram.com/flutterarsenal" target="_blank" data-toggle="tooltip" title="Follow us on Instagram">
-                <i class="fa fa-instagram"></i>
-                <span class="nav-link-inner--text d-lg-none">Instagram</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-icon" href="https://twitter.com/flutterarsenal" target="_blank" data-toggle="tooltip" title="Follow us on Twitter">
-                <i class="fa fa-twitter-square"></i>
-                <span class="nav-link-inner--text d-lg-none">Twitter</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-icon" href="https://github.com/iamsarthakverma/flutterarsenal" target="_blank" data-toggle="tooltip" title="Star us on Github">
-                <i class="fa fa-github"></i>
-                <span class="nav-link-inner--text d-lg-none">Github</span>
-              </a>
-            </li>
-            <li class="nav-item d-none d-lg-block ml-lg-4">
-              <a href="https://www.creative-tim.com/product/argon-design-system" target="_blank" class="btn btn-neutral btn-icon">
-                <span class="btn-inner--icon">
-                  <i class="fa fa-cloud-download mr-2"></i>
-                </span>
-                <span class="nav-link-inner--text">Login</span>
-              </a>
-            </li>
-          </ul>
-        </div>
+  <div class="container">
+    <header>
+      <div id="header">
       </div>
-    </nav>
-  </header>
+    </header>
+  </div>
 
   <main>
     <div class="position-relative">
@@ -163,7 +72,7 @@
                     <div class="input-group-prepend">
   
                         <div class="btn-group">
-                            <button type="button" class="btn btn-primary " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Items</button>
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Items</button>
                             <div class="dropdown-menu">
                               <a class="dropdown-item" href="#">All Items</a>
                               <div class="dropdown-divider"></div>
@@ -202,7 +111,7 @@
 
     <section class="section-sm  m-5 ">
 
-        <div class="row align-items-center justify-content-center">
+        <div class="row align-items-around justify-content-around">
 
             <div class="col-lg-3 ">
 
@@ -225,12 +134,26 @@
 
             </div>
 
-            <div class="col-lg-2">
+            <!-- <div class="col-lg-3">
 
+                <h6 class="text-primary text-uppercase text-center">CATEGORY</h6>
 
-            </div>
+                <div class="">
+                    dropdown d-inline-block
+                    <button type="button" class="btn btn-secondary dropdown-toggle btn-lg btn-block" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Categories</button>
+                    <div class="dropdown-menu">
+                      <input class="form-control form-control-muted" placeholder="Search" type="text">
+                      <a class="dropdown-item" href="#">All Categories</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                      
+                    </div>
+                </div>
 
-            <div class="col-lg-3 ">
+            </div> -->
+
+            <div class="col-lg-3 "> 
 
                 <h6 class="text-primary text-uppercase text-center">SORT BY</h6>
 
