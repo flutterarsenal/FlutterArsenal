@@ -1,0 +1,179 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Flutter Arsenal</title>
+      <!-- Favicon -->
+      <link href= "{% static 'assets/img/brand/favicon.png' %}" rel="icon" type="image/png">
+      <!-- Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+      <!-- Icons -->
+      <link href="{% static 'assets/vendor/nucleo/css/nucleo.css' %}" rel="stylesheet">
+      <link href="{% static 'assets/vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+      <!-- Argon CSS -->
+      <link type="text/css" href="{% static 'assets/css/argon.css' %}" rel="stylesheet">
+      <!-- BrickLayer CSS -->
+      <link type="text/css" href="{% static 'assets/css/bricklayer.min.css' %}" rel="stylesheet">
+   </head>
+   <body>
+      <header>
+         <div class="header-global">
+            <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom">
+               <div class="container-fluid mx-5">
+                  <a class="navbar-brand mr-lg-5" href="./index.html">
+                  <img src="{% static '/assets/img/brand/white.png' %}">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="navbar-collapse collapse" id="navbar_global">
+                     <div class="navbar-collapse-header">
+                        <div class="row">
+                           <div class="col-6 collapse-brand">
+                              <a href="./index.html">
+                              <img src="./assets/img/brand/white.png">
+                              </a>
+                           </div>
+                           <div class="col-6 collapse-close">
+                              <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+                              <span></span>
+                              <span></span>
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                     <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+                        <li class="nav-item">
+                           <a class="nav-link" href="#" role="button">
+                           <span class="nav-link-inner--text ">Home</span>
+                           </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#" role="button">
+                           <span class="nav-link-inner--text ">Top Projects</span>
+                           </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#" role="button">
+                           <span class="nav-link-inner--text ">Events</span>
+                           </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#" role="button">
+                           <span class="nav-link-inner--text ">Flutter</span>
+                           </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#" role="button">
+                           <span class="nav-link-inner--text ">Contribute</span>
+                           </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#" role="button">
+                           <span class="nav-link-inner--text ">Contact</span>
+                           </a>
+                        </li>
+                     </ul>
+                     <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+                        <li class="nav-item">
+                           <a class="nav-link nav-link-icon" href="https://www.facebook.com/flutterarsenal" target="_blank" data-toggle="tooltip" title="Like us on Facebook">
+                           <i class="fa fa-facebook-square"></i>
+                           <span class="nav-link-inner--text d-lg-none">Facebook</span>
+                           </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link nav-link-icon" href="https://www.instagram.com/flutterarsenal" target="_blank" data-toggle="tooltip" title="Follow us on Instagram">
+                           <i class="fa fa-instagram"></i>
+                           <span class="nav-link-inner--text d-lg-none">Instagram</span>
+                           </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link nav-link-icon" href="https://twitter.com/flutterarsenal" target="_blank" data-toggle="tooltip" title="Follow us on Twitter">
+                           <i class="fa fa-twitter-square"></i>
+                           <span class="nav-link-inner--text d-lg-none">Twitter</span>
+                           </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link nav-link-icon" href="https://github.com/iamsarthakverma/flutterarsenal" target="_blank" data-toggle="tooltip" title="Star us on Github">
+                           <i class="fa fa-github"></i>
+                           <span class="nav-link-inner--text d-lg-none">Github</span>
+                           </a>
+                        </li>
+                        <li class="nav-item d-none d-lg-block ml-lg-4">
+                           <a href="https://www.creative-tim.com/product/argon-design-system" target="_blank" class="btn btn-neutral btn-icon">
+                           <span class="btn-inner--icon">
+                           <i class="fa fa-cloud-download mr-2"></i>
+                           </span>
+                           <span class="nav-link-inner--text">Login</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </nav>
+         </div>
+      </header>
+      {% block main %}
+      {% endblock %}
+      <footer class="footer">
+         <div class="container">
+            <div class="row row-grid align-items-center my-md">
+               <div class="col-lg-6">
+                  <h3 class="text-primary font-weight-light mb-2">Thank you for supporting us!</h3>
+                  <h4 class="mb-0 font-weight-light">Let's get in touch on any of these platforms.</h4>
+               </div>
+               <div class="col-lg-6 text-lg-center btn-wrapper">
+                  <a target="_blank" href="https://twitter.com/flutterarsenal" class="btn btn-neutral btn-icon-only btn-twitter btn-round btn-lg" data-toggle="tooltip" data-original-title="Follow us">
+                  <i class="fa fa-twitter"></i>
+                  </a>
+                  <a target="_blank" href="https://www.facebook.com/flutterarsenal" class="btn btn-neutral btn-icon-only btn-facebook btn-round btn-lg" data-toggle="tooltip" data-original-title="Like us">
+                  <i class="fa fa-facebook-square"></i>
+                  </a>
+                  <a target="_blank" href="https://instagram.com/flutterarsenal" class="btn btn-neutral btn-icon-only btn-dribbble btn-lg btn-round" data-toggle="tooltip" data-original-title="Follow us">
+                  <i class="fa fa-instagram"></i>
+                  </a>
+                  <a target="_blank" href="https://github.com/flutterarsenal" class="btn btn-neutral btn-icon-only btn-github btn-round btn-lg" data-toggle="tooltip" data-original-title="Star on Github">
+                  <i class="fa fa-github"></i>
+                  </a>
+               </div>
+            </div>
+            <hr>
+            <div class="row align-items-center justify-content-md-between">
+               <div class="col-md-6">
+                  <div class="copyright">
+                     &copy; 2019
+                     <a href="#" target="_blank">Flutter Arsenal</a>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <ul class="nav nav-footer justify-content-end">
+                     <li class="nav-item">
+                        <a href="#" class="nav-link" target="_blank">About Us</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="#" class="nav-link" target="_blank">Blog</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="#" class="nav-link" target="_blank">MIT License</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- Core -->
+      <script src="{% static 'assets/vendor/jquery/jquery.min.js' %}"></script>
+      <script src="{% static 'assets/vendor/popper/popper.min.js' %}"></script>
+      <script src="{% static 'assets/vendor/bootstrap/bootstrap.min.js' %}"></script>
+      <script src="{% static 'assets/vendor/headroom/headroom.min.js' %}"></script>
+      <!-- Optional plugins -->
+      <!-- <script src="assets/vendor/PLUGIN_FOLDER/PLUGIN_SCRIPT.js"></script> -->
+      <!-- Theme JS -->
+      <script src="{% static 'assets/js/argon.js' %}"></script>
+      <!-- BrickLayer JS -->
+      <script src="{% static 'assets/js/bricklayer.min.js' %}"></script>
+      <script src="{% static 'assets/js/bricklayerCards.js' %}"></script>
+   </body>
+</html>

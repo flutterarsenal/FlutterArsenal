@@ -15,7 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from .views import home_page, project_page
+from django.conf.urls.static import static
+from django.conf import settings
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-]
+    path('fa-admin/', admin.site.urls),
+    path('', home_page),
+    path('project-name', project_page),
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+ 
