@@ -1,0 +1,143 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block main %}
+
+<main class="profile-page">
+    <section class="section-profile-cover section-shaped my-0">
+       <!-- Circles background -->
+       <div class="shape shape-style-1 shape-primary alpha-4">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+       </div>
+       <div class="container shape-container d-flex align-items-start py-lg" >
+          <div class="col px-0">
+             <div class="row align-items-center justify-content-center">
+                <div class="col-lg-12 text-center">
+                   <h1 class="display-1 text-white mt-5">Contribute</h1>
+                </div>
+             </div>
+          </div>
+       </div>
+    </section>
+    <section class="section">
+       <div class="container-fluid">
+          <div class="card card-profile shadow mt--300 mx-lg">
+             <div class="px-4">
+                <div class="row justify-content-center">
+                   
+                   <div class="col-lg-12 align-self-lg-center py-4"> 
+
+                        <div class="nav-wrapper">
+                                <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-icons-text" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link mb-sm-3 mb-md-0 active" id="tabs-icons-text-1-tab" data-toggle="tab" href="#tabs-icons-text-1" role="tab" aria-controls="tabs-icons-text-1" aria-selected="true"><i class="ni ni-cloud-upload-96 mr-2"></i>Submit a Project</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link mb-sm-3 mb-md-0" id="tabs-icons-text-2-tab" data-toggle="tab" href="#tabs-icons-text-2" role="tab" aria-controls="tabs-icons-text-2" aria-selected="false"><i class="ni ni-bell-55 mr-2"></i>Submit an Event</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link mb-sm-3 mb-md-0" id="tabs-icons-text-3-tab" data-toggle="tab" href="#tabs-icons-text-3" role="tab" aria-controls="tabs-icons-text-3" aria-selected="false"><i class="ni ni-calendar-grid-58 mr-2"></i>Submit a Feedback</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card my-3">
+                                
+                                <div class="card-body">
+
+                                        <div class="tab-content" id="myTabContent">
+                                                <div class="tab-pane fade show active" id="tabs-icons-text-1" role="tabpanel" aria-labelledby="tabs-icons-text-1-tab">
+                                                        <div class="alert alert-primary " role="alert" >
+                                                            <strong>IMPORTANT SUBMISSION RULES:</strong>
+                                                            <ul class="my-2">
+                                                                <li>Your project submission will be reviewed and approved or rejected in the nearest future.</li>
+                                                                <li>Suggested project has not been already presented on the Flutter Arsenal website. Use search to check it.</li>
+                                                                <li>Project description should be a clear, short and well structured Markdown text.</li>
+                                                                <li>Do not use a lot of images in the project description, one picture would be enough.</li>
+                                                                <li>Image file should not be larger than 150kb with resolution smaller than 400x400.</li>
+                                                            </ul>
+                                                        </div>
+
+                                                        <div class="text-start my-5 border-bottom">
+                                                            <h3>General Details</h3>
+                                                        </div>
+                                                        <form>
+                                                                <div class="row">
+                                                                  <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                      <div class="input-group mb-4">
+                                                                        <div class="input-group-prepend">
+                                                                          <span class="input-group-text"><i class="fas fa-pencil-alt"></i></span>
+                                                                        </div>
+                                                                        <input class="form-control" placeholder="Project Name" type="text">
+                                                                      </div>
+                                                                    </div>
+                                                                  </div>
+                                                                  <div class="col-md-6">
+                                                                        <div class="form-group">
+                                                                          <div class="input-group mb-4">
+                                                                            <div class="input-group-prepend">
+                                                                              <span class="input-group-text"><i class="fas fa-link"></i></span>
+                                                                            </div>
+                                                                            <input class="form-control" placeholder="Project Link" type="text">
+                                                                          </div>
+                                                                        </div>
+                                                                      </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                      <div class="form-group">
+                                                                          <div class="dropdown ">
+                                                                              <button class="btn btn-outline-default dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                                Regular
+                                                                              </button>
+                                                                              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                                <a class="dropdown-item" href="#">Action</a>
+                                                                                <a class="dropdown-item" href="#">Another action</a>
+                                                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                                              </div>
+                                                                            </div>
+                                                                      </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                          <div class="form-group">
+                                                                            <div class="input-group mb-4">
+                                                                              <div class="input-group-prepend">
+                                                                                <span class="input-group-text"><i class="fas fa-link"></i></span>
+                                                                              </div>
+                                                                              <input class="form-control" placeholder="Project Link" type="text">
+                                                                            </div>
+                                                                          </div>
+                                                                        </div>
+                                                                  </div>
+                                                            </form>
+                                                    
+                                                </div>
+                                                <div class="tab-pane fade" id="tabs-icons-text-2" role="tabpanel" aria-labelledby="tabs-icons-text-2-tab">
+                                                    <p class="description">Event form here</p>
+                                                </div>
+                                                <div class="tab-pane fade" id="tabs-icons-text-3" role="tabpanel" aria-labelledby="tabs-icons-text-3-tab">
+                                                    <p class="description">Feedback Form here</p>
+                                                </div>
+                                            </div>
+                                </div>
+                                
+                            </div>
+
+
+                   </div>
+                   
+                   
+                </div>
+             </div>
+          </div>
+       </div>
+    </section>
+ </main>
+
+{% endblock main %}

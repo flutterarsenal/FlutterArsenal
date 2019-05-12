@@ -6,3 +6,6 @@ def home_page(request):
 
 def project_page(request):
     return render(request, "projectPageTemplate.html")
+
+def contribute_page(request):
+    return render(request, "contributePage.html")

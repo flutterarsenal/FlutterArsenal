@@ -3336,6 +3336,47 @@ fieldset:disabled a.btn
     box-shadow: none, 0 0 0 0 rgba(23, 43, 77, .5);
 }
 
+.btn-dropdown-custom
+{
+    color: #f61234;
+    border-color: #f70b2e; 
+    background-color: transparent;
+    background-image: none;
+}
+.btn-dropdown-custom:hover
+{
+    color: #fff;
+    border-color: #172b4d; 
+    background-color: #172b4d;
+}
+.btn-dropdown-custom:focus,
+.btn-dropdown-custom.focus
+{
+    box-shadow: 0 0 0 0 rgba(23, 43, 77, .5);
+}
+.btn-dropdown-custom.disabled,
+.btn-dropdown-custom:disabled
+{
+    color: #172b4d;
+    background-color: transparent;
+}
+.btn-dropdown-custom:not(:disabled):not(.disabled):active,
+.btn-dropdown-custom:not(:disabled):not(.disabled).active,
+.show > .btn-dropdown-custom.dropdown-toggle
+{
+    color: #fff;
+    border-color: #172b4d; 
+    background-color: #172b4d;
+}
+.btn-dropdown-custom:not(:disabled):not(.disabled):active:focus,
+.btn-dropdown-custom:not(:disabled):not(.disabled).active:focus,
+.show > .btn-dropdown-custom.dropdown-toggle:focus
+{
+    box-shadow: 0 0 0 0 rgba(23, 43, 77, .5);
+}
+
+
+
 .btn-white
 {
     color: #212529;
