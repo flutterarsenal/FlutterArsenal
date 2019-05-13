@@ -9,3 +9,6 @@ def project_page(request):
 
 def contribute_page(request):
     return render(request, "contributePage.html")
+
+def top_projects_page(request):
+    return render(request, "topProjects.html")
