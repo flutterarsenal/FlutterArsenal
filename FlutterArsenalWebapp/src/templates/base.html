@@ -104,11 +104,12 @@
                            </a>
                         </li>
                         <li class="nav-item d-none d-lg-block ml-lg-4">
-                           <a href="https://www.creative-tim.com/product/argon-design-system" target="_blank" class="btn btn-neutral btn-icon">
+                           <a data-toggle="modal" data-target="#modal-default" class="btn btn-neutral btn-icon">
                            <span class="btn-inner--icon">
                            <i class="fa fa-sign-in mr-2"></i>
                            </span>
                            <span class="nav-link-inner--text">Login</span>
+                           
                            </a>
                         </li>
                      </ul>
@@ -119,6 +120,49 @@
       </header>
       {% block main %}
       {% endblock %}
+
+
+      <!-- Login Modal -->
+
+
+      <div class="modal fade" id="modal-default" tabindex="-1" role="dialog" aria-labelledby="modal-default" aria-hidden="true">
+            <div class="modal-dialog modal- modal-dialog-centered modal-sm" role="document">
+                <div class="modal-content">
+        
+                    <div class="modal-header">
+                        <h6 class="modal-title" id="modal-title-default">Please Sign In</h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+        
+                    <div class="modal-body p-0">
+        
+                         <div class="card bg-secondary  border-0">
+                               <div class="card-body pb-5">
+                                   <div class="text-muted text-center mb-3"><small>Sign in with</small></div>
+                                   <div class="btn-wrapper text-center">
+                                       <a href="#" class="btn btn-neutral btn-icon">
+                                           <span class="btn-inner--icon"><img src="{% static 'assets/img/icons/common/github.svg' %}"></span>
+                                           <span class="btn-inner--text">Github</span>
+                                       </a>
+                                       
+                                   </div>
+                               </div>
+                               
+                           </div>
+        
+                    </div>
+
+                    <div class="modal-footer">
+                         <button type="button" class="btn btn-link mx-auto my-0 p-0" data-dismiss="modal">Having Trouble?</button>
+                     </div>
+        
+                </div>
+            </div>
+        </div>
+
+
       <footer class="footer">
          <div class="container">
             <div class="row row-grid align-items-center my-md">
@@ -164,6 +208,7 @@
                </div>
             </div>
          </div>
+
       </footer>
       <!-- Core -->
       <script src="{% static 'assets/vendor/jquery/jquery.min.js' %}"></script>
