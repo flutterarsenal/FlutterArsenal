@@ -1,12 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 
-def home_page(request):
-    return render(request, "homePage.html")
-
-def project_page(request):
-    return render(request, "projectPage.html")
-
 def contribute_page(request):
     return render(request, "contributePage.html")
 

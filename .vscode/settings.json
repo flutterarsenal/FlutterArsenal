@@ -1,3 +1,6 @@
 {
-    "python.pythonPath": "/Users/sarthakverma/.local/share/virtualenvs/FlutterArsenalWebapp-1-pEPmAO/bin/"
+    "python.pythonPath": "/Users/sarthakverma/.local/share/virtualenvs/FlutterArsenalWebapp-1-pEPmAO/bin/",
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true
 }
