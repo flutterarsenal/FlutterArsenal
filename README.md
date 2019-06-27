@@ -1,5 +1,5 @@
 # FlutterArsenal
-# A categorized directory of libraries and tools for Flutter.
+# A categorized directory of libraries and tools for Flutter SDK.
 - Categories 1. Free 2.Paid 3. Demo 
 - Let the user rate the repos 
 - Let user Filter the project cards using Tags(bar codes, login screens, etc) and Categories (free, paid, demo) 

@@ -1,0 +1,13 @@
+---
+layout: archive
+---
+
+{{ content }}
+
+<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Projects" }}</h3>
+
+{% for post in site.projects %}
+  {% include archive-single.html %}
+{% endfor %}
+
+{% include paginator.html %}

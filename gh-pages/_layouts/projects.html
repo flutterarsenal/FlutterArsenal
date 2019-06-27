@@ -1,0 +1,11 @@
+---
+layout: archive
+---
+
+
+{{ content }}
+
+
+      {% for post in site.projects %}
+        {% include archive-single.html type=page.entries_layout %}
+      {% endfor %}

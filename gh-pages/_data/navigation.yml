@@ -1,0 +1,23 @@
+# main links
+main:
+  - title: "Home"
+    url: /home
+  - title: "Top Projects"
+    url: /top-projects
+  - title: "Events"
+    url: /events
+  - title: "FlutterBlog"
+    url: /posts/
+  - title: "Contribute"
+    url: /contribute
+  - title: "Contact"
+    url: /contact
+
+  # - title: "About"
+  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+  # - title: "Sample Posts"
+  #   url: /year-archive/
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  # - title: "Sitemap"
+  #   url: /sitemap/
