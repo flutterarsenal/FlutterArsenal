@@ -7,7 +7,7 @@ main:
   - title: "Events"
     url: /events
   - title: "FlutterBlog"
-    url: /posts/
+    url: https://medium.com/@IAmSarthakVerma
   - title: "Contribute"
     url: /contribute
   - title: "Contact"
