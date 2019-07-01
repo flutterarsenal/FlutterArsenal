@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "/Users/sarthakverma/.local/share/virtualenvs/FlutterArsenalWebapp-1-pEPmAO/bin/",
+    "python.pythonPath": "D:\\src\\FlutterArsenal\\FlutterArsenalWebapp\\fa_venv\\Scripts\\python.exe",
     "python.linting.pylintEnabled": false,
     "python.linting.flake8Enabled": true,
     "python.linting.enabled": true
