@@ -44,7 +44,7 @@ layout: default
                       <div class="text-center mt-5">
                           <div class="avatar-group">
                               {% for eachContributor in page.contributors %}
-                                <a href="eachContributor.url" class="avatar rounded-circle">
+                                <a href="{{eachContributor.url}}" class="avatar rounded-circle">
                                     <img alt="Image placeholder" src="{{ eachContributor.image }}">
                                 </a>
                               {% endfor %}
