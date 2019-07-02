@@ -9,6 +9,6 @@ assignees: ''
 
 ## Please provide links and information in the following format
 
-github: <!-- Github repository link to the project -->
-tag:  <!-- one tag to add to your project -->
-excerpt:  <!-- max 100 words summary -->
+github:     <!-- Github repository link to the project -->
+tag:        <!-- one tag to add to your project -->
+excerpt:    <!-- max 100 words summary -->
