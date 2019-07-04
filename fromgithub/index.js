@@ -261,7 +261,7 @@ function parseIssueAndGetInfo(payload) {
 Thank you @${payload.sender.login} for submitting a new weapon for the __FlutterArsenal__.
 The github repository: [_${gitUrlSplit[3]}/${gitUrlSplit[4]}_](${github_url}) is now awaiting approval from __admins__.
 
-Kudos to you for contributing!
+Kudos to you for contributing! cc @all-contributors please add @${payload.sender.login} for content and ideas.
         `;
         sendUpdateToIssue(payload, issueMsgToSend);
 
