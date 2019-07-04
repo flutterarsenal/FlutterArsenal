@@ -9,7 +9,7 @@ assignees: ''
 
 <!-- Please provide links and information in the following format -->
 
-github-repo-url:     <!-- Github repository link to the project -->
-tag-for-repo:        <!-- one tag to add to your project -->
-excerpt-for-repo:    <!-- max 100 words summary -->
-email-id:           <!-- please provide email id for -->
+github:     <!-- Github repository link to the project -->
+tag:        <!-- one tag to add to your project -->
+excerpt:    <!-- max 100 words summary -->
+email-id:           <!-- please provide email id for further communications-->
