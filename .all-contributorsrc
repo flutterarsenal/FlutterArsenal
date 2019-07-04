@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "karx",
+      "name": "Kartik Arora",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/7826138?v=4",
+      "profile": "https://akriya.co.in",
+      "contributions": [
+        "content",
+        "ideas"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "FlutterArsenal",
+  "projectOwner": "karx",
+  "repoType": "github",
+  "repoHost": "https://github.com"
+}
