@@ -4,7 +4,7 @@
 [![Tip Me via PayPal](https://img.shields.io/badge/PayPal-tip%20me-green.svg?logo=paypal)](https://www.paypal.me/karx01)
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
-# A categorized directory of libraries and tools for Flutter SDK.
+# A categorized directory of libraries and tools for Flutter.
 - Categories 1. Free 2.Paid 3. Demo 
 - Let the user rate the repos 
 - Let user Filter the project cards using Tags(bar codes, login screens, etc) and Categories (free, paid, demo) 
