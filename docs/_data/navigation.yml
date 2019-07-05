@@ -4,10 +4,12 @@ main:
     url: /home
   - title: "Top Projects"
     url: /top-projects
+  - title: "Top Contributors"
+    url: /top-contributors
   - title: "Events"
     url: /events
   - title: "FlutterBlog"
-    url: /posts/
+    url: https://medium.com/@IAmSarthakVerma
   - title: "Contribute"
     url: /contribute
   - title: "Contact"

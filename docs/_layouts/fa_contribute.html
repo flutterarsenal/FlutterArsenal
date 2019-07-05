@@ -23,7 +23,7 @@ layout: default
                 </div>
                  <div class="col-lg-8 text-center">
 
-                    <p class="lead text-white mt-2">Add your favourite F.</p>
+                    <p class="lead text-white mt-2">Add your favourite Flutter weapons, propose an event, or share feedaback.</p>
                    </div>
              </div>
           </div>
@@ -68,7 +68,7 @@ layout: default
                                                         </div>
 
 
-                                                        <form>
+                                                        <form name="fa-project" method="POST" data-netlify="true" autocomplete="on">
 
                                                             <div class="text-start my-5 border-bottom">
                                                                 <h3>General Details</h3>
@@ -81,7 +81,7 @@ layout: default
                                                                         <div class="input-group-prepend">
                                                                           <span class="input-group-text"><i class="material-icons">title</i></span>
                                                                         </div>
-                                                                        <input class="form-control" placeholder="Project Name" type="text">
+                                                                        <input name="title" class="form-control" placeholder="Project Name" type="text">
                                                                       </div>
                                                                     </div>
                                                                   </div>
@@ -103,7 +103,7 @@ layout: default
                                                                               <div class="input-group-prepend">
                                                                                 <span class="input-group-text"><i class="material-icons">category</i></span>
                                                                               </div>
-                                                                              <select class="form-control">
+                                                                              <select name="category" class="form-control">
                                                                                   <option>Select Category</option>
                                                                                   <option>Free</option>
                                                                                   <option>Demo</option>
@@ -118,7 +118,7 @@ layout: default
                                                                               <div class="input-group-prepend">
                                                                                 <span class="input-group-text"><i class="material-icons">copyright</i></span>
                                                                               </div>
-                                                                              <select class="form-control">
+                                                                              <select name="license" class="form-control">
                                                                                   <option>Select License</option>
                                                                                   <option>Apache</option>
                                                                                   <option>MIT</option>                                                                                </select>
@@ -134,26 +134,21 @@ layout: default
                                                                                 <div class="input-group-prepend">
                                                                                   <span class="input-group-text"><i class="material-icons">label</i></span>
                                                                                 </div>
-                                                                                <select class="form-control">
-                                                                                    <option>Select Tag</option>
-                                                                                    <option>Free</option>
-                                                                                    <option>Demo</option>
-                                                                                    <option>Paid</option>
-                                                                                  </select>
+                                                                                <input name="tag" class="form-control"  placeholder="Tag">
                                                                               </div>
                                                                             </div>
                                                                       </div>
                                                                     </div>
 
                                                                     <div class="text-start my-5 border-bottom">
-                                                                        <h3>Description</h3>
+                                                                        <h3>Excerpt</h3>
                                                                     </div>
 
                                                                     <div class="row">
                                                                         <div class="col-md-12">
-                                                                            <div class="form-group">
+                                                                              <div class="form-group">
                                                                                 <div class="input-group mb-4">
-                                                                                  <textarea class="form-control" rows="7"></textarea>
+                                                                                  <textarea name="description" class="form-control" rows="3" placeholder="Small excerpt explaining how this weapon is usefull."></textarea>
                                                                                 </div>
                                                                               </div>
                                                                         </div>
@@ -166,7 +161,7 @@ layout: default
                                                                           <input type="checkbox" class="custom-control-input" id="customCheck1">
                                                                           <label class="custom-control-label mb-4" for="customCheck1">I have read and understood the guidelines for submissions.</label>
                                                                         </div>
-                                                                      <button type="button" class="btn btn-primary btn-lg btn-block">Submit For Review</button>
+                                                                      <button type="submit" class="btn btn-primary btn-lg btn-block">Submit For Review</button>
 
 
                                                             </form>
@@ -182,7 +177,7 @@ layout: default
                                                     </div>
 
 
-                                                    <form>
+                                                    <form name="fa-events" method="POST" data-netlify="true">
 
                                                         <div class="text-start my-5 border-bottom">
                                                             <h3>General Details</h3>
@@ -195,7 +190,7 @@ layout: default
                                                                     <div class="input-group-prepend">
                                                                       <span class="input-group-text"><i class="material-icons">title</i></span>
                                                                     </div>
-                                                                    <input class="form-control" placeholder="Event Name" type="text">
+                                                                    <input name="title" class="form-control" placeholder="Event Name" type="text">
                                                                   </div>
                                                                 </div>
                                                               </div>
@@ -206,7 +201,7 @@ layout: default
                                                                           <span class="input-group-text"><i class="material-icons">calendar_today</i></span>
                                                                         </div>
 
-                                                                          <input class="form-control" type="datetime-local" id="example-datetime-local-input">
+                                                                          <input name="today" class="form-control" type="datetime-local" id="example-datetime-local-input">
                                                                       </div>
                                                                     </div>
                                                                   </div>
@@ -218,7 +213,7 @@ layout: default
                                                                           <div class="input-group-prepend">
                                                                             <span class="input-group-text"><i class="material-icons">money</i></span>
                                                                           </div>
-                                                                          <select class="form-control">
+                                                                          <select name="money" class="form-control">
                                                                               <option>Event Fee</option>
                                                                               <option>Free</option>
                                                                               <option>Paid</option>
@@ -233,7 +228,7 @@ layout: default
                                                                     <div class="input-group-prepend">
                                                                       <span class="input-group-text"><i class="material-icons">location_on</i></span>
                                                                     </div>
-                                                                    <input class="form-control" placeholder="Event Location" type="text">
+                                                                    <input name="location" class="form-control" placeholder="Event Location" type="text">
                                                                   </div>
                                                                       </div>
                                                                 </div>
@@ -246,7 +241,7 @@ layout: default
                                                                               <div class="input-group-prepend">
                                                                                 <span class="input-group-text"><i class="material-icons">link</i></span>
                                                                               </div>
-                                                                              <input class="form-control" placeholder="Event Website" type="text">
+                                                                              <input name="url" class="form-control" placeholder="Event Website" type="text">
                                                                             </div>
                                                                         </div>
                                                                   </div>
@@ -263,7 +258,7 @@ layout: default
                                                                           <div class="input-group-prepend">
                                                                             <span class="input-group-text align-items-start"><i class="material-icons">edit</i></span>
                                                                           </div>
-                                                                          <textarea class="form-control" placeholder="Event Description" type="text" rows="7"></textarea>
+                                                                          <textarea name="description" class="form-control" placeholder="Event Description" type="text" rows="7"></textarea>
 
                                                                         </div>
                                                                       </div>
@@ -276,10 +271,10 @@ layout: default
                                                                       <h3>Submission</h3>
                                                                   </div>
                                                                   <div class="custom-control custom-checkbox">
-                                                                      <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                                                      <input name="custom-control" type="checkbox" class="custom-control-input" id="customCheck2">
                                                                       <label class="custom-control-label mb-4" for="customCheck2">I have read and understood the guidelines for submissions.</label>
                                                                     </div>
-                                                                  <button type="button" class="btn btn-primary btn-lg btn-block">Submit For Review</button>
+                                                                  <button type="submit" class="btn btn-primary btn-lg btn-block">Submit For Review</button>
 
 
                                                         </form>
@@ -296,7 +291,7 @@ layout: default
                                                         <li>You want to give a review.</li>
                                                         <li>You want to convey anything related to our platform.</li>
                                                 </div>
-                                                <form>
+                                                <form name="fa-feedback" method="POST" data-netlify="true">
 
                                                             <div class="text-start my-5 border-bottom">
                                                                 <h3>Your Feedback</h3>
@@ -309,7 +304,7 @@ layout: default
                                                                       <div class="input-group-prepend">
                                                                         <span class="input-group-text"><i class="material-icons">title</i></span>
                                                                       </div>
-                                                                      <input class="form-control" placeholder="Title" type="text">
+                                                                      <input name="title" class="form-control" placeholder="Title" type="text">
                                                                     </div>
                                                                   </div>
                                                                 </div>
@@ -322,7 +317,7 @@ layout: default
                                                                         <div class="input-group-prepend">
                                                                           <span class="input-group-text"><i class="material-icons">category</i></span>
                                                                         </div>
-                                                                        <input class="form-control" placeholder="Category" type="text">
+                                                                        <input name="category" class="form-control" placeholder="Category" type="text">
                                                                       </div>
                                                                     </div>
                                                                   </div>
@@ -336,7 +331,7 @@ layout: default
                                                                           <div class="input-group-prepend">
                                                                             <span class="input-group-text align-items-start"><i class="material-icons">edit</i></span>
                                                                           </div>
-                                                                          <textarea class="form-control" placeholder="Description" type="text" rows="7"></textarea>
+                                                                          <textarea name="description" class="form-control" placeholder="Description" type="text" rows="7"></textarea>
 
                                                                         </div>
                                                                       </div>
@@ -353,7 +348,7 @@ layout: default
                                                                   <input type="checkbox" class="custom-control-input" id="customCheck3">
                                                                   <label class="custom-control-label mb-4" for="customCheck3">I am not a spammer.</label>
                                                                 </div>
-                                                              <button type="button" class="btn btn-primary btn-lg btn-block">Submit For Review</button>
+                                                              <button type="submit" class="btn btn-primary btn-lg btn-block">Submit For Review</button>
 
 
                                                     </form>

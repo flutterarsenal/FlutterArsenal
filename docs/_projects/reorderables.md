@@ -16,7 +16,8 @@ registered_by:
   image: https://avatars2.githubusercontent.com/u/20480867?s=460&v=4  
   url: https://github.com/IAmSarthakVerma
   on_date: "June 27, 2019"
-badge:
+votes: 1
+stars: 1
 last_updated: "Jun 22, 2019"
 
 owner: 
