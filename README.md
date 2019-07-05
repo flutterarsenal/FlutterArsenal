@@ -37,7 +37,7 @@ Flutter Arsenal ia a **categorized directory of libraries and tools for Flutter*
 )](https://github.com/IAmSarthakVerma/FlutterArsenal)
 
 ## Community
-[![FlutterArsenal](https://img.shields.io/badge/Facebook%20Group-Join-3b5998.svg)](https://www.facebook.com/flutterarsenal/groups/flutterarsenal) [![FlutterArsenal](https://img.shields.io/badge/Telegram%20Group-Join-0088cc.svg
+[![FlutterArsenal](https://img.shields.io/badge/Facebook%20Group-Join-3b5998.svg)](https://www.facebook.com/groups/flutterarsenal) [![FlutterArsenal](https://img.shields.io/badge/Telegram%20Group-Join-0088cc.svg
 )](https://t.me/joinchat/MmgLoRScpdd4-hXydA4MWw) [![FlutterArsenal](https://img.shields.io/badge/Discord-Join-000000.svg
 )](https://discord.gg/YPn8fpa)
 
