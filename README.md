@@ -1,7 +1,7 @@
 ![flutter-arsenal-facebook-cover](https://user-images.githubusercontent.com/20480867/60738493-265e8300-9f7c-11e9-8a1f-4ec36ba4e4e1.jpg)
 
 # Flutter Arsenal
-[![LICENSE](https://img.shields.io/github/license/karx/FlutterArsenal.svg)](https://raw.githubusercontent.com/karx/homepage/master/LICENSE) [![Jekyll](https://img.shields.io/badge/jekyll-%3E%3D%203.6-blue.svg)](https://jekyllrb.com/) [![Tip Me via PayPal](https://img.shields.io/badge/PayPal-tip%20me-green.svg?logo=paypal)](https://www.paypal.me/karx01)  [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
+[![LICENSE](https://img.shields.io/github/license/karx/FlutterArsenal.svg)](https://raw.githubusercontent.com/karx/homepage/master/LICENSE) [![Jekyll](https://img.shields.io/badge/jekyll-%3E%3D%203.6-blue.svg)](https://jekyllrb.com/) [![Tip Me via PayPal](https://img.shields.io/badge/PayPal-tip%20me-green.svg?logo=paypal)](https://www.paypal.me/karx01)  [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
 
 Flutter Arsenal ia a **categorized directory of libraries and tools for Flutter**. These libraries and tools are so called **WEAPONS** of this **ARSENAL**.
 
@@ -30,7 +30,16 @@ Flutter Arsenal ia a **categorized directory of libraries and tools for Flutter*
 
   - A list of **BLOG POSTS** containing different information about various flutter related topics can be viewed at the [Blog](https://www.flutterarsenal.com/blog) Page.
 
-  
+
+## Social Media
+[![FlutterArsenal](https://img.shields.io/badge/Facebook%20Page-Like-3b5998.svg)](https://www.facebook.com/flutterarsenal) [![FlutterArsenal](https://img.shields.io/badge/Twitter-Follow-blue.svg)](https://twitter.com/flutterarsenal) [![FlutterArsenal](https://img.shields.io/badge/Instagram-Follow-orange.svg
+)](https://www.instagram.com/flutterarsenal/) [![FlutterArsenal](https://img.shields.io/badge/Github-Star-000000.svg
+)](https://github.com/IAmSarthakVerma/FlutterArsenal)
+
+## Community
+[![FlutterArsenal](https://img.shields.io/badge/Facebook%20Group-Join-3b5998.svg)](https://www.facebook.com/flutterarsenal/groups/flutterarsenal) [![FlutterArsenal](https://img.shields.io/badge/Telegram%20Group-Join-0088cc.svg
+)](https://t.me/joinchat/MmgLoRScpdd4-hXydA4MWw) [![FlutterArsenal](https://img.shields.io/badge/Discord-Join-000000.svg
+)](https://discord.gg/YPn8fpa)
 
 ## Makers
 
