@@ -65,7 +65,6 @@ Thanks goes to these wonderful people and organizations:
 <table>
    <tr>
      <td align="center"><a href="https://artiosys.com/"><img src="http://artiosys.com/wp-content/uploads/2018/05/artiosys_logo.png" width="100px;" alt="Artiosys Ventures"/><br /><sub><b>Artiosys Ventures</b></sub></a><br /></td>
-     <td align="center"><a href="https://artiosys.com/"><img src="https://akriya.co.in/assets/images/Deva-a.png" width="100px;" alt="Akriya Technologies"/><br /><sub><b>Akriya Technologies</b></sub></a><br /></td>
       <td align="center"><a href="https://afrost.org/"><img src="https://afrost.org/img/logo.png" width="100px;" alt="Afrost"/><br /><sub><b>Afrost</b></sub></a><br /></td>
    </tr>
 </table>
