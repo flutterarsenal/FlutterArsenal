@@ -6,19 +6,15 @@
   "commit": false,
   "contributors": [
     {
-      "login": "karx",
-      "name": "Kartik Arora",
-      "avatar_url": "https://avatars2.githubusercontent.com/u/7826138?v=4",
-      "profile": "https://akriya.co.in",
-      "contributions": [
-        "content",
-        "ideas"
-      ]
+      "login": "iamsarthakverma",
+      "name": "Sarthak Verma",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/20480867?s=400&v=4",
+      "profile": "https://github.com/IAmSarthakVerma"
     }
   ],
   "contributorsPerLine": 7,
   "projectName": "FlutterArsenal",
-  "projectOwner": "karx",
+  "projectOwner": "flutterarsenal",
   "repoType": "github",
   "repoHost": "https://github.com"
 }
