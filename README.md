@@ -1,7 +1,7 @@
 ![flutter-arsenal-facebook-cover](https://user-images.githubusercontent.com/20480867/60738493-265e8300-9f7c-11e9-8a1f-4ec36ba4e4e1.jpg)
 
 # Flutter Arsenal
-[![LICENSE](https://img.shields.io/github/license/karx/FlutterArsenal.svg)](https://raw.githubusercontent.com/karx/homepage/master/LICENSE) [![Jekyll](https://img.shields.io/badge/jekyll-%3E%3D%203.6-blue.svg)](https://jekyllrb.com/) [![Tip Me via PayPal](https://img.shields.io/badge/PayPal-tip%20me-green.svg?logo=paypal)](https://www.paypal.me/karx01)  [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
+[![LICENSE](https://img.shields.io/github/license/karx/FlutterArsenal.svg)](https://raw.githubusercontent.com/karx/homepage/master/LICENSE) [![Jekyll](https://img.shields.io/badge/jekyll-%3E%3D%203.6-blue.svg)](https://jekyllrb.com/) [![All Authors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
 
 Flutter Arsenal is a **categorized directory of libraries and tools for Flutter**. These libraries and tools are so-called **WEAPONS** of this **ARSENAL**.
 
@@ -43,6 +43,17 @@ Flutter Arsenal is a **categorized directory of libraries and tools for Flutter*
 )](https://t.me/joinchat/MmgLoRScpdd4-hXydA4MWw) [![FlutterArsenal](https://img.shields.io/badge/Discord-Join-000000.svg
 )](https://discord.gg/YPn8fpa)
 
+## Support
+
+### Donate
+
+[![Tip Me via PayPal](https://img.shields.io/badge/PayPal-tip%20me-green.svg?logo=paypal)](https://www.paypal.me/karx01)
+
+
+### Make Flutter Arsenal Better
+
+Contributions of any kinds are welcome always. If you wish to add a feature or fix an existing bug on the Flutter Arsenal platform then please review our [**CONTRIBUTING GUIDE**](https://github.com/IAmSarthakVerma/FlutterArsenal/blob/master/CONTRIBUTING.md) and then [**SUBMIT A PULL REQUEST**](https://github.com/iamsarthakverma/flutterarsenal/pulls).
+
 ## Makers
 
 Thanks goes to these wonderful people :
@@ -53,4 +64,3 @@ Thanks goes to these wonderful people :
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
