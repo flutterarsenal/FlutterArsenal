@@ -47,7 +47,7 @@ Flutter Arsenal is a **categorized directory of libraries and tools for Flutter*
 
 ### Donate
 
-[![Tip Me via PayPal](https://img.shields.io/badge/PayPal-tip%20me-green.svg?logo=paypal)](https://www.paypal.me/karx01)
+[![Tip Me via PayPal](https://img.shields.io/badge/PayPal-TIP%20ME-green.svg?logo=paypal)](https://www.paypal.me/karx01)
 
 
 ### Make Flutter Arsenal Better
@@ -60,7 +60,12 @@ Thanks goes to these wonderful people :
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-<table><tr><td align="center"><a href="https://github.com/IAmSarthakVerma"><img src="https://avatars3.githubusercontent.com/u/20480867?s=400&v=4" width="100px;" alt="Sarthak Verma"/><br /><sub><b>Sarthak Verma</b></sub></a><br /><a href="#content-iamsarthakverma" title="Content">🖋</a> <a href="#ideas-iamsarthakverma" title="Ideas, Planning, & Feedback">🤔</a></td> <td align="center"><a href="https://akriya.co.in"><img src="https://avatars2.githubusercontent.com/u/7826138?v=4" width="100px;" alt="Kartik Arora"/><br /><sub><b>Kartik Arora</b></sub></a><br /><a href="#content-karx" title="Content">🖋</a> <a href="#ideas-karx" title="Ideas, Planning, & Feedback">🤔</a></td></tr></table>
+<table>
+   <tr>
+      <td align="center"><a href="https://github.com/IAmSarthakVerma"><img src="https://avatars3.githubusercontent.com/u/20480867?s=400&v=4" width="100px;" alt="Sarthak Verma"/><br /><sub><b>Sarthak Verma</b></sub></a><br /></td>
+      <td align="center"><a href="https://akriya.co.in"><img src="https://avatars2.githubusercontent.com/u/7826138?v=4" width="100px;" alt="Kartik Arora"/><br /><sub><b>Kartik Arora</b></sub></a><br /></td>
+   </tr>
+</table>
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
