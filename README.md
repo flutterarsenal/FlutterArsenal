@@ -65,6 +65,7 @@ Thanks goes to these wonderful people and organizations:
       <td align="center"><a href="https://github.com/IAmSarthakVerma"><img src="https://avatars3.githubusercontent.com/u/20480867?s=400&v=4" width="100px;" alt="Sarthak Verma"/><br /><sub><b>Sarthak Verma</b></sub></a><br /></td>
       <td align="center"><a href="https://akriya.co.in"><img src="https://avatars2.githubusercontent.com/u/7826138?v=4" width="100px;" alt="Kartik Arora"/><br /><sub><b>Kartik Arora</b></sub></a><br /></td>
      <td align="center"><a href="https://artiosys.com/"><img src="http://artiosys.com/wp-content/uploads/2018/05/artiosys_logo.png" width="100px;" alt="Artiosys Ventures"/><br /><sub><b>Artiosys Ventures</b></sub></a><br /></td>
+      <td align="center"><a href="https://afrost.org/"><img src="https://afrost.org/img/logo.png" width="100px;" alt="Afrost"/><br /><sub><b>Afrost</b></sub></a><br /></td>
    </tr>
 </table>
 
