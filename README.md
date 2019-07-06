@@ -55,17 +55,27 @@ Flutter Arsenal is a **categorized directory of libraries and tools for Flutter*
 Contributions of any kinds are welcome always. If you wish to add a feature or fix an existing bug on the Flutter Arsenal platform then please review our [**CONTRIBUTING GUIDE**](https://github.com/IAmSarthakVerma/FlutterArsenal/blob/master/CONTRIBUTING.md) and then [**SUBMIT A PULL REQUEST**](https://github.com/iamsarthakverma/flutterarsenal/pulls).
 
 ## Makers
-
 Thanks goes to these wonderful people and organizations:
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
+
+### Organizations
+
+<table>
+   <tr>
+     <td align="center"><a href="https://artiosys.com/"><img src="http://artiosys.com/wp-content/uploads/2018/05/artiosys_logo.png" width="100px;" alt="Artiosys Ventures"/><br /><sub><b>Artiosys Ventures</b></sub></a><br /></td>
+     <td align="center"><a href="https://artiosys.com/"><img src="https://akriya.co.in/assets/images/Deva-a.png" width="100px;" alt="Akriya Technologies"/><br /><sub><b>Akriya Technologies</b></sub></a><br /></td>
+      <td align="center"><a href="https://afrost.org/"><img src="https://afrost.org/img/logo.png" width="100px;" alt="Afrost"/><br /><sub><b>Afrost</b></sub></a><br /></td>
+   </tr>
+</table>
+
+### Individuals
+
 <table>
    <tr>
       <td align="center"><a href="https://github.com/IAmSarthakVerma"><img src="https://avatars3.githubusercontent.com/u/20480867?s=400&v=4" width="100px;" alt="Sarthak Verma"/><br /><sub><b>Sarthak Verma</b></sub></a><br /></td>
       <td align="center"><a href="https://akriya.co.in"><img src="https://avatars2.githubusercontent.com/u/7826138?v=4" width="100px;" alt="Kartik Arora"/><br /><sub><b>Kartik Arora</b></sub></a><br /></td>
-     <td align="center"><a href="https://artiosys.com/"><img src="http://artiosys.com/wp-content/uploads/2018/05/artiosys_logo.png" width="100px;" alt="Artiosys Ventures"/><br /><sub><b>Artiosys Ventures</b></sub></a><br /></td>
-      <td align="center"><a href="https://afrost.org/"><img src="https://afrost.org/img/logo.png" width="100px;" alt="Afrost"/><br /><sub><b>Afrost</b></sub></a><br /></td>
    </tr>
 </table>
 
