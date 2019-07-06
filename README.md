@@ -3,7 +3,9 @@
 # Flutter Arsenal
 [![LICENSE](https://img.shields.io/github/license/karx/FlutterArsenal.svg)](https://raw.githubusercontent.com/karx/homepage/master/LICENSE) [![Jekyll](https://img.shields.io/badge/jekyll-%3E%3D%203.6-blue.svg)](https://jekyllrb.com/) [![Tip Me via PayPal](https://img.shields.io/badge/PayPal-tip%20me-green.svg?logo=paypal)](https://www.paypal.me/karx01)  [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
 
-Flutter Arsenal ia a **categorized directory of libraries and tools for Flutter**. These libraries and tools are so called **WEAPONS** of this **ARSENAL**.
+Flutter Arsenal is a **categorized directory of libraries and tools for Flutter**. These libraries and tools are so-called **WEAPONS** of this **ARSENAL**.
+
+[![FlutterArsenal](https://img.shields.io/badge/Flutter%20Arsenal-Visit%20Wbsite-5e72e4.svg)](https://www.flutterarsenal.com/)
 
 ## Features
 
@@ -12,12 +14,12 @@ Flutter Arsenal ia a **categorized directory of libraries and tools for Flutter*
   - Search the various **WEAPON** on the go at the [Home](https://www.flutterarsenal.com) page.
   - Filter the search on the basis of **TAGS** and get more specific results.
   - Filter the search on the basis of **CATEGORIES** to see only **FREE**, **DEMO** or **PAID** weapons.
-  - A list of the **TOP TEN WEAPONS** of the month (ranked on the basis of combination of various parameters) can be viewed at the [Top Projects](https://www.flutterarsenal.com/top-projects) Page.
+  - A list of the **TOP TEN WEAPONS** of the month (ranked on the basis of a combination of various parameters) can be viewed at the [Top Projects](https://www.flutterarsenal.com/top-projects) Page.
   
 
 ##### Flutter Events
 
-  - Search the various **Flutter Events** on the go at [Events](https://www.flutterarsenal.com/events) page.
+  - Search the various **Flutter Events** on the go at the [Events](https://www.flutterarsenal.com/events) page.
   - Filter the search on the basis of **CATEGORIES** to see only **FREE** or **PAID** events.
 
 ##### Adding Flutter Weapons and Events
