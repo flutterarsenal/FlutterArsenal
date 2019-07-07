@@ -9,6 +9,8 @@ Flutter Arsenal is a **categorized directory of libraries and tools for Flutter*
 
 ## Features
 
+**Please file a new issue [HERE](https://github.com/flutterarsenal/FlutterArsenal/issues/new?template=bug_report.md) in case you find any bug while using Flutter Arsenal**
+
 ##### Flutter Libraries and Tools (WEAPONS)
 
   - Search the various **WEAPON** on the go at the [Home](https://www.flutterarsenal.com) page.
@@ -24,7 +26,7 @@ Flutter Arsenal is a **categorized directory of libraries and tools for Flutter*
 
 ##### Adding Flutter Weapons and Events
 
-  - To add any Flutter Weapon or Event on Flutter Arsenal, you just need to add an issue using the "Request to add project to FlutterArsenal" template to this repo at the [Issues](https://github.com/flutterarsenal/FlutterArsenal/issues/new/choose) Page.
+  - To add any Flutter Weapon on Flutter Arsenal, you just need to crete a new issue using the predefined template [HERE](https://github.com/flutterarsenal/FlutterArsenal/issues/new?assignees=&labels=project-request&template=request-to-add-project-to-flutterarsenal.md&title=%5BRequest%5D+Awesome+Flutter+Project).
   - A list of the **TOP TEN Contributors** of the month (ranked on the basis of contributions made on Flutter Arsenal) can be viewed at the [Top Contributors](https://www.flutterarsenal.com/top-contributors) Page.
 
 
