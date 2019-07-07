@@ -5,7 +5,7 @@
 
 Flutter Arsenal is a **categorized directory of libraries and tools for Flutter**. These libraries and tools are so-called **WEAPONS** of this **ARSENAL**.
 
-[![FlutterArsenal](https://img.shields.io/badge/Flutter%20Arsenal-Visit%20Wbsite-5e72e4.svg)](https://www.flutterarsenal.com/)
+[![FlutterArsenal](https://img.shields.io/badge/Flutter%20Arsenal-Visit%20Website-5e72e4.svg)](https://www.flutterarsenal.com/)
 
 ## Features
 
@@ -24,7 +24,7 @@ Flutter Arsenal is a **categorized directory of libraries and tools for Flutter*
 
 ##### Adding Flutter Weapons and Events
 
-  - To add any Flutter Weapon or Event on Flutter Arsenal, you just need to visit the [Contribute](https://www.flutterarsenal.com/contribute) Page.
+  - To add any Flutter Weapon or Event on Flutter Arsenal, you just need to add an issue using the "Request to add project to FlutterArsenal" template to this repo at the [Issues](https://github.com/flutterarsenal/FlutterArsenal/issues/new/choose) Page.
   - A list of the **TOP TEN Contributors** of the month (ranked on the basis of contributions made on Flutter Arsenal) can be viewed at the [Top Contributors](https://www.flutterarsenal.com/top-contributors) Page.
 
 
@@ -41,7 +41,8 @@ Flutter Arsenal is a **categorized directory of libraries and tools for Flutter*
 ## Community
 [![FlutterArsenal](https://img.shields.io/badge/Facebook%20Group-Join-3b5998.svg)](https://www.facebook.com/groups/flutterarsenal) [![FlutterArsenal](https://img.shields.io/badge/Telegram%20Group-Join-0088cc.svg
 )](https://t.me/joinchat/MmgLoRScpdd4-hXydA4MWw) [![FlutterArsenal](https://img.shields.io/badge/Discord-Join-000000.svg
-)](https://discord.gg/YPn8fpa)
+)](https://discord.gg/YPn8fpa) [![FlutterArsenal](https://img.shields.io/badge/WhatsApp%20Group-Join-25D366.svg)](https://chat.whatsapp.com/LO4pNp5k2K0EStVdmRmtxK)
+
 
 ## Support
 
