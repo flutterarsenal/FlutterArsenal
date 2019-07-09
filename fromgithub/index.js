@@ -117,7 +117,7 @@ async function pubToFile(data, tag, excerpt) {
     md += await getReadmeFileFromGithub(data.repository.nameWithOwner);
     console.log('printing');
 
-    fs.writeFileSync(`./output/fa_${data.repository.name}.md`, md)
+    // fs.writeFileSync(`./output/fa_${data.repository.name}.md`, md)
     var base64md = Buffer.from(md).toString('base64');
     var gitreturn = await commitToGithub(base64md, `docs/_projects/fa_git_${data.repository.name}.md`);
     console.log('published to github');
