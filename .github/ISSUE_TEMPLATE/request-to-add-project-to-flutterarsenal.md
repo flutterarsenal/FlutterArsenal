@@ -12,4 +12,5 @@ assignees: ''
 github:     <!-- Github repository link to the project -->
 tag:        <!-- one tag to add to your project -->
 excerpt:    <!-- max 100 words summary -->
-email-id:           <!-- please provide email id for further communications-->
+email-id:   <!-- please provide email id for further communications -->
+teaser:     <!-- image or gif of this weapon -->

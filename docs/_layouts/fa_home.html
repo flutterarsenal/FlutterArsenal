@@ -22,7 +22,7 @@ layout: default
         <div class="row align-items-center justify-content-center">
           <div class="col-lg-6 text-center">
             <img src="/assets/img/brand/white.png" style="width: 200px;" class="img-fluid">
-            <p class="lead text-white">A categorized directory of libraries and tools for the Flutter SDK.</p>
+            <p class="lead text-white">A categorized directory of libraries and tools for Flutter.</p>
           </div>
         </div>
       </div>
@@ -116,14 +116,50 @@ layout: default
         </li>
       </ul>
     </div> -->
-    <h4 class="text-primary text-left">Top Flutter Widgets this month</h4>
+    <div class="col-lg-3 ">
+      <h6 class="text-primary text-uppercase text-center">SHOW ONLY</h6>
+      <ul class="nav nav-pills nav-fill flex-column flex-sm-row" id="tabs-text" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link mb-sm-3 mb-md-0 active" id="tabs-text-1-tab" data-toggle="tab" href="#tabs-text-1"
+            role="tab" aria-controls="tabs-text-1" aria-selected="true">All</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mb-sm-3 mb-md-0" id="tabs-text-2-tab" data-toggle="tab" href="#tabs-text-2" role="tab"
+            aria-controls="tabs-text-2" aria-selected="false">Free</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mb-sm-3 mb-md-0" id="tabs-text-3-tab" data-toggle="tab" href="#tabs-text-3" role="tab"
+            aria-controls="tabs-text-3" aria-selected="false">Demo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mb-sm-3 mb-md-0" id="tabs-text-4-tab" data-toggle="tab" href="#tabs-text-4" role="tab"
+            aria-controls="tabs-text-4" aria-selected="false">Paid</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-lg-3 ">
+      <h6 class="text-primary text-uppercase text-center">SORT BY</h6>
+      <ul class="nav nav-pills nav-fill flex-column flex-sm-row" id="tabs-text" role="tablist">
+         <li class="nav-item">
+            <a class="nav-link mb-sm-3 mb-md-0 active" id="tabs-text-1-tab" data-toggle="tab" href="#tabs-text-1" role="tab" aria-controls="tabs-text-1" aria-selected="true">Latest</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link mb-sm-3 mb-md-0" id="tabs-text-2-tab" data-toggle="tab" href="#tabs-text-2" role="tab" aria-controls="tabs-text-2" aria-selected="false">Ratings</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link mb-sm-3 mb-md-0" id="tabs-text-3-tab" data-toggle="tab" href="#tabs-text-3" role="tab" aria-controls="tabs-text-3" aria-selected="false">Name</a>
+         </li>
+      </ul>
+   </div>
     <!-- <h3>Top Voted Flutter Widgets</h3> -->
   </div>
+  <h4 class="text-primary text-left">Top Flutter Widgets this month</h4>
+
   <div class="bricklayer">
-
-    {% for card_obj in site.projects %}
-
-    <div class="card card-lift--hover shadow border-0 my-5 mx-2">
+    {% assign projects = site.projects | sample: 2 | map: "title, tag" %}
+    <pre> {{projects}}</pre>
+    {% for card_obj in site.projects limit:10 %}
+    <div class="card card-lift--hover shadow border-0 my-5 mx-2 proj_{{card_obj.category}}">
       <div class="card-body py-4">
         <a href="{{card_obj.url}}" class="text-primary text-uppercase">{{ card_obj.title }} </a>
         <a class="pull-right">

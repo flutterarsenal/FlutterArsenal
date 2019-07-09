@@ -117,7 +117,7 @@ async function pubToFile(data, tag, excerpt) {
     md += await getReadmeFileFromGithub(data.repository.nameWithOwner);
     console.log('printing');
 
-    fs.writeFileSync(`./output/fa_${data.repository.name}.md`, md)
+    // fs.writeFileSync(`./output/fa_${data.repository.name}.md`, md)
     var base64md = Buffer.from(md).toString('base64');
     var gitreturn = await commitToGithub(base64md, `docs/_projects/fa_git_${data.repository.name}.md`);
     console.log('published to github');
@@ -261,7 +261,7 @@ function parseIssueAndGetInfo(payload) {
 Thank you @${payload.sender.login} for submitting a new weapon for the __FlutterArsenal__.
 The github repository: [_${gitUrlSplit[3]}/${gitUrlSplit[4]}_](${github_url}) is now awaiting approval from __admins__.
 
-Kudos to you for contributing!
+Kudos to you for contributing! cc @all-contributors please add @${payload.sender.login} for content and ideas.
         `;
         sendUpdateToIssue(payload, issueMsgToSend);
 

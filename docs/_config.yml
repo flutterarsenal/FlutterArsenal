@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "FlutterArsenal"
 title_separator          : "-"
 name                     : "FlutterArsenal"
-description              : "A categorized directory of libraries and tools for Flutter SDK"
+description              : "A categorized directory of libraries and tools for Flutter"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -232,6 +232,7 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - liquid_pluralize
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -241,6 +242,7 @@ whitelist:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - liquid_pluralize
 
 
 # Archives
@@ -302,6 +304,13 @@ defaults:
         author_profile: true
         share: true
         related: true
+  # Events
+  - scope:
+      path: "_events"
+      type: event
+    values:
+        layout: single
+
 
 
 collections:
@@ -309,8 +318,15 @@ collections:
      output: true
      permalink: /projects/:name
      layout: single
+  events:
+     output: true
+     permalink: /events/:name
+     layout: single
 
-      ## Javascript
+## Javascript
+head_scripts:
+  - /assets/js/kaaro.js
+
 footer_scripts:
   - /assets/vendor/jquery/jquery.min.js
   - /assets/vendor/popper/popper.min.js
