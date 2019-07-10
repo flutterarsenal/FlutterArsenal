@@ -22,6 +22,43 @@ github_graph_url = "https://api.github.com/graphql";
 const client = new GraphQLClient(github_graph_url, {
     headers: headers
 })
+
+var allRepos_test = ["VictorRancesCode/flutter_ibm_watson"];
+
+
+// Tell express to use the body-parser middleware and to not parse extended bodies
+app.use(bodyParser.urlencoded({ extended: false }))
+
+// Route that receives a POST request to /sms
+app.post('/issueNew', function (req, res) {
+    const payload = req.body.payload
+    const payloadJson = JSON.parse(payload);
+    //   console.log(req);
+    console.log(JSON.parse(payload)["action"]);
+    if (payloadJson.action === "opened") {
+        if (checkNewIssueIsProjectRequest(payloadJson)) {
+            console.log("This is an issue to trigger");
+            parseIssueAndGetInfo(payloadJson);
+        } else {
+            console.log("Seems like a normal issue");
+        }
+    } else if (payloadJson.action === "labeled") {
+        if (checkNewIssueIsProjectRequest(payloadJson, true)) {
+            console.log("This is going to merge now ");
+            parseIssueAndCommit(payloadJson);
+        }
+    }
+    res.set('Content-Type', 'text/plain')
+    res.send(`You sent: ${payload} to Express`)
+})
+
+// Tell our app to listen on port 3000
+app.listen(3148, function (err) {
+    if (err) {
+        throw err
+    }
+    console.log('Server started on port 3148')
+})
 async function getNewRepo(user, repo) {
     var dataToFetch =
         `{
@@ -67,7 +104,7 @@ async function getNewRepo(user, repo) {
     }
     return data;
 }
-var allRepos_test = ["VictorRancesCode/flutter_ibm_watson"];
+
 
 async function pubToFile(data, tag, excerpt) {
     if (!data) {
@@ -125,6 +162,8 @@ async function pubToFile(data, tag, excerpt) {
 
 
 }
+
+
 function addField(feildName, feildValue) {
     if (Array.isArray(feildValue)) {
         var toReturn = `${feildName}:\n`;
@@ -148,6 +187,8 @@ function addField(feildName, feildValue) {
 
     return stringToAdd;
 }
+
+
 async function getReadmeFileFromGithub(repositoryWithOwner) {
     var readMeURL = `https://raw.githubusercontent.com/${repositoryWithOwner}/master/README.md`;
     console.log(readMeURL);
@@ -182,40 +223,28 @@ async function commitToGithub(encodedMessage, filename, message = "") {
 
 }
 
-// Tell express to use the body-parser middleware and to not parse extended bodies
-app.use(bodyParser.urlencoded({ extended: false }))
 
-// Route that receives a POST request to /sms
-app.post('/issueNew', function (req, res) {
-    const payload = req.body.payload
-    const payloadJson = JSON.parse(payload);
-    //   console.log(req);
-    console.log(JSON.parse(payload)["action"]);
-    if (payloadJson.action === "opened") {
-        if (checkNewIssueIsProjectRequest(payloadJson)) {
-            console.log("This is an issue to trigger");
-            parseIssueAndGetInfo(payloadJson);
-        } else {
-            console.log("Seems like a normal issue");
-        }
-    } else if (payloadJson.action === "labeled") {
-        if (checkNewIssueIsProjectRequest(payloadJson, true)) {
-            console.log("This is going to merge now ");
-            parseIssueAndCommit(payloadJson);
-        }
-    }
-    res.set('Content-Type', 'text/plain')
-    res.send(`You sent: ${payload} to Express`)
-})
+async function sendUpdateToIssue(payload, updateString) {
+    var headers = {
+        'Authorization': 'token ' + config.github_token,
+        "Accept": "application/vnd.github.v3+json",
+        'User-Agent': 'flutterArsenal-cli'
 
-// Tell our app to listen on port 3000
-app.listen(3148, function (err) {
-    if (err) {
-        throw err
-    }
-    console.log('Server started on port 3148')
-})
-
+    };
+    var params = {
+        "body": updateString.toString()
+    };
+    console.log(params);
+    var issue_number = payload.issue.number;
+    var issueResponse = await request({
+        method: 'post',
+        url: `https://api.github.com/repos/${FLUTTER_ARSENAL_GITHUB_PATH}/issues/${issue_number}/comments`,
+        body: params,
+        headers: headers,
+        json: true
+    });
+    console.log(issueResponse);
+}
 function checkNewIssueIsProjectRequest(payload, checkIfApproved = false) {
     // TODO: make this better plz. This is bad
     const allLabels = payload.issue.labels;
@@ -338,27 +367,6 @@ Please help and support us in maintaining the biggest arsenal of Flutter weapons
     console.log(excerpt_result);
 }
 
-async function sendUpdateToIssue(payload, updateString) {
-    var headers = {
-        'Authorization': 'token ' + config.github_token,
-        "Accept": "application/vnd.github.v3+json",
-        'User-Agent': 'flutterArsenal-cli'
-
-    };
-    var params = {
-        "body": updateString.toString()
-    };
-    console.log(params);
-    var issue_number = payload.issue.number;
-    var issueResponse = await request({
-        method: 'post',
-        url: `https://api.github.com/repos/${FLUTTER_ARSENAL_GITHUB_PATH}/issues/${issue_number}/comments`,
-        body: params,
-        headers: headers,
-        json: true
-    });
-    console.log(issueResponse);
-}
 
 
 async function sendWelcomeEmail(email) {
@@ -370,27 +378,27 @@ async function sendWelcomeEmail(email) {
         var headers = {
             'Authorization': 'Bearer ' + config.sendgrid_key,
             'User-Agent': 'flutterArsenal-cli'
-    
+
         };
         var params = {
-            
-                "from" : {
-                    "email": "flutterarsenal@sendgrid.net"
-                },
-                "personalizations": [
-                    {
-                        "to": [
-                            {
-                                "email": "kartik.arora1214@gmail.com"
-                            }
-                        ]
-                    }
-                ],
-                "template_id": "d-3a75304e01854519a549467f4a1a88b4"
-            
+
+            "from": {
+                "email": "flutterarsenal@sendgrid.net"
+            },
+            "personalizations": [
+                {
+                    "to": [
+                        {
+                            "email": "kartik.arora1214@gmail.com"
+                        }
+                    ]
+                }
+            ],
+            "template_id": "d-3a75304e01854519a549467f4a1a88b4"
+
         };
         console.log(params);
-        
+
         var issueResponse = await request({
             method: 'post',
             url: `https://api.sendgrid.com/v3/mail/send`,
