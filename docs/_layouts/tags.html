@@ -1,15 +1,14 @@
 ---
 layout: archive
 ---
-
-{{ content }}
-
-{% assign tags_max = 0 %}
-{% for tag in site.tags %}
-  {% if tag[1].size > tags_max %}
-    {% assign tags_max = tag[1].size %}
-  {% endif %}
+{% assign rawtags = "" %}
+{% for project in site.projects %}
+  {% assign ttags = project.tags | append:'|' %}
+  {% assign rawtags = rawtags | append:ttags %}
 {% endfor %}
+{% assign rawtags = rawtags | split:'|' | sort %}
+
+<!-- {{ rawtags }} -->
 
 <ul class="taxonomy__index">
   {% for i in (1..tags_max) reversed %}

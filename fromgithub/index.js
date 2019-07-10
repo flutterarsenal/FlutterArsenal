@@ -248,10 +248,14 @@ function parseIssueAndGetInfo(payload) {
     var github_resultArray = getGithubURLRx(body);
     var tag_resultArray = getTagRx(body);
     var excerpt_resultArray = getExcerptRx(body);
+    var email_resultArray = getEmailRx(body);
+    var teaser_resultArray = getTeaserRx(body);
 
     var github_url = github_resultArray[0].trim();
     var tag_result = tag_resultArray[0].trim();
     var excerpt_result = excerpt_resultArray[0].trim();
+    var email_result = email_resultArray[0].trim();
+    var teaser_result = teaser_resultArray[0].trim();
 
     var gitUrlSplit = github_url.split('/');
     if (gitUrlSplit.length < 5)
@@ -264,7 +268,6 @@ The github repository: [_${gitUrlSplit[3]}/${gitUrlSplit[4]}_](${github_url}) is
 Kudos to you for contributing! cc @all-contributors please add @${payload.sender.login} for content and ideas.
         `;
         sendUpdateToIssue(payload, issueMsgToSend);
-
     }
     console.log(github_url);
     console.log(tag_result);
@@ -288,6 +291,19 @@ function getExcerptRx(body) {
     var excerpt_resultArray = excerpt_re.exec(body);
     return excerpt_resultArray;
 }
+
+function getEmailRx(body) {
+    var email_re = /(?<=email-id:).*?(?=<!--)/s;
+    var email_resultArray = email_re.exec(body);
+    return email_resultArray;
+}
+
+function getTeaserRx(body) {
+    var teaser_re = /(?<=teaser:).*?(?=<!--)/s;
+    var teaser_resultArray = teaser_re.exec(body);
+    return teaser_resultArray;
+}
+
 
 async function parseIssueAndCommit(payload) {
     const body = payload.issue.body;
@@ -342,4 +358,46 @@ async function sendUpdateToIssue(payload, updateString) {
         json: true
     });
     console.log(issueResponse);
+}
+
+
+async function sendWelcomeEmail(email) {
+    var email = email.trim();
+    if (!email || email.length < 5) {
+        console.log('invalid email :' + email);
+        return null;
+    } else {
+        var headers = {
+            'Authorization': 'Bearer ' + config.sendgrid_key,
+            'User-Agent': 'flutterArsenal-cli'
+    
+        };
+        var params = {
+            
+                "from" : {
+                    "email": "flutterarsenal@sendgrid.net"
+                },
+                "personalizations": [
+                    {
+                        "to": [
+                            {
+                                "email": "kartik.arora1214@gmail.com"
+                            }
+                        ]
+                    }
+                ],
+                "template_id": "d-3a75304e01854519a549467f4a1a88b4"
+            
+        };
+        console.log(params);
+        
+        var issueResponse = await request({
+            method: 'post',
+            url: `https://api.sendgrid.com/v3/mail/send`,
+            body: params,
+            headers: headers,
+            json: true
+        });
+        console.log(issueResponse);
+    }
 }
