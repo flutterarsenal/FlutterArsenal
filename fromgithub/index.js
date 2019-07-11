@@ -37,13 +37,14 @@ app.post('/issueNew', function (req, res) {
     console.log(JSON.parse(payload)["action"]);
     if (payloadJson.action === "opened") {
         if (checkNewIssueIsProjectRequest(payloadJson)) {
-            console.log("This is an issue to trigger");
-            parseIssueAndGetInfo(payloadJson);
-        } else {
-            console.log("Seems like a normal issue");
+            console.log("This is an issue to trigger project addition");
+            parseIssueAndProcessProjectRequest(payloadJson);
+        } else if (checkNewIssueIsEventRequest(payloadJson)){
+            console.log("Seems like a event issue");
+            parseIssueAndProcessProjectRequest(payloadJson);
         }
     } else if (payloadJson.action === "labeled") {
-        if (checkNewIssueIsProjectRequest(payloadJson, true)) {
+        if (checkNewIssueIsProjectRequest(payloadJson) && checkNewIssueIsApproved(payloadJson)) {
             console.log("This is going to merge now ");
             parseIssueAndCommit(payloadJson);
         }
@@ -203,7 +204,7 @@ async function commitToGithub(encodedMessage, filename, message = "") {
     // console.log(readMeURL);
     var headers = {
         'Authorization': 'token ' + config.github_token,
-        "Accept": "application/vnd.github.v3+json",
+        "Accept": "applicatcheckNewIssueIsEventRequestion/vnd.github.v3+json",
         'User-Agent': 'flutterArsenal-cli'
 
     };
@@ -245,22 +246,9 @@ async function sendUpdateToIssue(payload, updateString) {
     });
     console.log(issueResponse);
 }
-function checkNewIssueIsProjectRequest(payload, checkIfApproved = false) {
+function checkNewIssueIsProjectRequest(payload) {
     // TODO: make this better plz. This is bad
     const allLabels = payload.issue.labels;
-    console.log(checkIfApproved);
-    if (checkIfApproved) {
-        console.log("checking for approved");
-        for (let index = 0; index < allLabels.length; index++) {
-            const labelObj = allLabels[index];
-            console.log(labelObj.name);
-            if (labelObj.name === "approved") {
-                console.log('returning true - IS APPROVED');
-                return true;
-            }
-        }
-        return false;
-    }
     for (let index = 0; index < allLabels.length; index++) {
         const labelObj = allLabels[index];
         console.log(labelObj.name);
@@ -272,7 +260,37 @@ function checkNewIssueIsProjectRequest(payload, checkIfApproved = false) {
     return false;
 }
 
-function parseIssueAndGetInfo(payload) {
+function checkNewIssueIsEventRequest(payload) {
+    // TODO: make this better plz. This is bad
+    const allLabels = payload.issue.labels;
+    for (let index = 0; index < allLabels.length; index++) {
+        const labelObj = allLabels[index];
+        console.log(labelObj.name);
+        if (labelObj.name === "event-request") {
+            console.log('returning true');
+            return true;
+        }
+    }
+    return false;
+}
+
+function checkNewIssueIsApproved(payload) {
+    // TODO: make this better plz. This is bad
+    const allLabels = payload.issue.labels;
+    
+        console.log("checking for approved");
+        for (let index = 0; index < allLabels.length; index++) {
+            const labelObj = allLabels[index];
+            console.log(labelObj.name);
+            if (labelObj.name === "approved") {
+                console.log('returning true - IS APPROVED');
+                return true;
+            }
+        }
+        return false;
+}
+
+function parseIssueAndProcessProjectRequest(payload) {
     const body = payload.issue.body;
     var github_resultArray = getGithubURLRx(body);
     var tag_resultArray = getTagRx(body);
@@ -302,11 +320,44 @@ Kudos to you for contributing! cc @all-contributors please add @${payload.sender
     console.log(tag_result);
     console.log(excerpt_result);
 }
+function parseIssueAndProcessIssueRequest(payload) {
+    const body = payload.issue.body;
+    var web_resultArray = getWebURLRx(body);
+    var tag_resultArray = getTagRx(body);
+    var excerpt_resultArray = getExcerptRx(body);
+    var email_resultArray = getEmailRx(body);
+    var teaser_resultArray = getTeaserRx(body);
+    var date_resultArray = getDateRx(body);
+
+    var web_url = web_resultArray[0].trim();
+    var tag_result = tag_resultArray[0].trim();
+    var excerpt_result = excerpt_resultArray[0].trim();
+    var email_result = email_resultArray[0].trim();
+    var teaser_result = teaser_resultArray[0].trim();
+    var date_result = date_resultArray[0].trim();
+
+        var issueMsgToSend = `
+Thank you @${payload.sender.login} for submitting a new battle ground for the __FlutterArsenal__.
+The Event at web link: [Event link](${web_url}) on __${date_result} is now awaiting approval from __admins__.
+
+Kudos to you for contributing! cc @all-contributors please add @${payload.sender.login} for content and ideas.
+        `;
+        sendUpdateToIssue(payload, issueMsgToSend);
+    
+    console.log(web_url);
+    console.log(tag_result);
+    console.log(excerpt_result);
+}
 
 function getGithubURLRx(body) {
     var github_re = /(git|ssh|http(s)?)(:\/\/)(github\.com)\/([\w,-]+)\/([\w,-]+)/gm;
     var github_resultArray = github_re.exec(body);
     return github_resultArray;
+}
+function getWebURLRx(body) {
+    var web_re = /((ftp|http|https):\/\/)?(www.)?(?!.*(ftp|http|https|www.))[a-zA-Z0-9_-]+(\.[a-zA-Z]+)+((\/)[\w#]+)*(\/\w+\?[a-zA-Z0-9_]+=\w+(&[a-zA-Z0-9_]+=\w+)*)?$/gm;
+    var web_resultArray = web_re.exec(body);
+    return web_resultArray;
 }
 
 function getTagRx(body) {
@@ -331,6 +382,13 @@ function getTeaserRx(body) {
     var teaser_re = /(?<=teaser:).*?(?=<!--)/s;
     var teaser_resultArray = teaser_re.exec(body);
     return teaser_resultArray;
+}
+
+
+function getDateRx(body) {
+    var date_re = /(?<=date:).*?(?=<!--)/s;
+    var date_resultArray = date_re.exec(body);
+    return date_resultArray;
 }
 
 
