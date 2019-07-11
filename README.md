@@ -60,8 +60,6 @@ Contributions of any kinds are welcome always. If you wish to add a feature or f
 ## Makers
 Thanks goes to these wonderful people and organizations:
 
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore -->
 
 ### Organizations
 
@@ -72,8 +70,12 @@ Thanks goes to these wonderful people and organizations:
    </tr>
 </table>
 
+
+
 ### Individuals
 
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
 <table>
    <tr>
       <td align="center"><a href="https://github.com/IAmSarthakVerma"><img src="https://avatars3.githubusercontent.com/u/20480867?s=400&v=4" width="100px;" alt="Sarthak Verma"/><br /><sub><b>Sarthak Verma</b></sub></a><br /></td>

@@ -33,7 +33,7 @@ layout: default
           <div class="form-group">
             <div class="input-group input-group-alternative mb-4">
               <div class="input-group-prepend">
-                <div class="btn-group">
+                <!-- <div class="btn-group">
                   <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">All Items</button>
                   <div class="dropdown-menu">
@@ -42,7 +42,7 @@ layout: default
                     <a class="dropdown-item" href="#">Another action</a>
                     <a class="dropdown-item" href="#">Something else here</a>
                   </div>
-                </div>
+                </div> -->
               </div>
               {%- assign search_provider = site.search_provider | default: "lunr" -%}
               {%- case search_provider -%}
@@ -116,41 +116,7 @@ layout: default
         </li>
       </ul>
     </div> -->
-    <div class="col-lg-3 ">
-      <h6 class="text-primary text-uppercase text-center">SHOW ONLY</h6>
-      <ul class="nav nav-pills nav-fill flex-column flex-sm-row" id="tabs-text" role="tablist">
-        <li class="nav-item">
-          <a class="nav-link mb-sm-3 mb-md-0 active" id="tabs-text-1-tab" data-toggle="tab" href="#tabs-text-1"
-            role="tab" aria-controls="tabs-text-1" aria-selected="true">All</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link mb-sm-3 mb-md-0" id="tabs-text-2-tab" data-toggle="tab" href="#tabs-text-2" role="tab"
-            aria-controls="tabs-text-2" aria-selected="false">Free</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link mb-sm-3 mb-md-0" id="tabs-text-3-tab" data-toggle="tab" href="#tabs-text-3" role="tab"
-            aria-controls="tabs-text-3" aria-selected="false">Demo</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link mb-sm-3 mb-md-0" id="tabs-text-4-tab" data-toggle="tab" href="#tabs-text-4" role="tab"
-            aria-controls="tabs-text-4" aria-selected="false">Paid</a>
-        </li>
-      </ul>
-    </div>
-    <div class="col-lg-3 ">
-      <h6 class="text-primary text-uppercase text-center">SORT BY</h6>
-      <ul class="nav nav-pills nav-fill flex-column flex-sm-row" id="tabs-text" role="tablist">
-         <li class="nav-item">
-            <a class="nav-link mb-sm-3 mb-md-0 active" id="tabs-text-1-tab" data-toggle="tab" href="#tabs-text-1" role="tab" aria-controls="tabs-text-1" aria-selected="true">Latest</a>
-         </li>
-         <li class="nav-item">
-            <a class="nav-link mb-sm-3 mb-md-0" id="tabs-text-2-tab" data-toggle="tab" href="#tabs-text-2" role="tab" aria-controls="tabs-text-2" aria-selected="false">Ratings</a>
-         </li>
-         <li class="nav-item">
-            <a class="nav-link mb-sm-3 mb-md-0" id="tabs-text-3-tab" data-toggle="tab" href="#tabs-text-3" role="tab" aria-controls="tabs-text-3" aria-selected="false">Name</a>
-         </li>
-      </ul>
-   </div>
+   
     <!-- <h3>Top Voted Flutter Widgets</h3> -->
   </div>
   <h4 class="text-primary text-left">Top Flutter Widgets this month</h4>
@@ -158,7 +124,7 @@ layout: default
   <div class="bricklayer">
     {% assign projects = site.projects | sample: 2 | map: "title, tag" %}
     <pre> {{projects}}</pre>
-    {% for card_obj in site.projects limit:10 %}
+    {% for card_obj in site.projects limit:100 %}
     <div class="card card-lift--hover shadow border-0 my-5 mx-2 proj_{{card_obj.category}}">
       <div class="card-body py-4">
         <a href="{{card_obj.url}}" class="text-primary text-uppercase">{{ card_obj.title }} </a>
@@ -170,7 +136,7 @@ layout: default
           <span class="fa fa-star "></span>
         </a>
         <div>
-          <a href="#" class="badge badge-pill badge-primary">{{ card_obj.tag }}</a>
+          <a href="/tags/#{{card_obj.tag}}" class="badge badge-pill badge-primary">{{ card_obj.tag }}</a>
           <a href="#" class="badge badge-pill badge-success">{{ card_obj.category }}</a>
         </div>
         <p class="description mt-3">{{ card_obj.excerpt }}</p>

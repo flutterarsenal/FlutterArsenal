@@ -4,7 +4,7 @@ layout: default
 
 <main class="profile-page">
     <section class="section-profile-cover section-shaped my-0">
-       <div class="shape shape-style-1 shape-primary alpha-4">
+       <div class="shape shape-style-1 shape-primary alpha-4"> 
           <span></span>
           <span></span>
           <span></span>
@@ -31,10 +31,10 @@ layout: default
                 <div class="row justify-content-center">
                    <div class="col-lg-3 order-lg-2">
                       <div class="card-profile-image">
-                         <a href="#">
+                         <a href="{{page.owner.url}}">
                          <img src="{{ page.owner.profile_image }}" class="rounded-circle">
-                         </a>
-                      </div>
+                           </a>
+                        </div>
                       <div class="text-center mt-xxl">
                          <h3> {{ page.owner.name }}
                          </h3>
@@ -73,7 +73,7 @@ layout: default
                             <span class="description">LINK</span>
                          </div>
                          <div>
-                            <span class="heading"><a href="#" class="badge badge-pill badge-primary mb-1">
+                            <span class="heading"><a href="/tags/#{{page.tag}}" class="badge badge-pill badge-primary mb-1">
                             <i class="fa fa-tag mr-1"></i>
                             {{page.tag}}
                             </a></span>
