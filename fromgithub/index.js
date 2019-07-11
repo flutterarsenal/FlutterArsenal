@@ -329,12 +329,19 @@ function parseIssueAndProcessEventRequest(payload) {
     var teaser_resultArray = getTeaserRx(body);
     var date_resultArray = getDateRx(body);
 
+    console.log(web_resultArray);
     var web_url = web_resultArray[0].trim();
+    console.log("web_url : " + web_url);
     var tag_result = tag_resultArray[0].trim();
+    console.log("tag_result : " + tag_result);
     var excerpt_result = excerpt_resultArray[0].trim();
+    console.log("excerpt_result : " + excerpt_result);
     var email_result = email_resultArray[0].trim();
+    console.log("email_result : " + email_result);
     var teaser_result = teaser_resultArray[0].trim();
+    console.log("teaser_result : " + teaser_result);
     var date_result = date_resultArray[0].trim();
+    console.log("date_result : " + date_result);
 
         var issueMsgToSend = `
 Thank you @${payload.sender.login} for submitting a new battle ground for the __FlutterArsenal__.
