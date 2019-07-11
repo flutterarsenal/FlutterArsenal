@@ -41,7 +41,7 @@ app.post('/issueNew', function (req, res) {
             parseIssueAndProcessProjectRequest(payloadJson);
         } else if (checkNewIssueIsEventRequest(payloadJson)){
             console.log("Seems like a event issue");
-            parseIssueAndProcessProjectRequest(payloadJson);
+            parseIssueAndProcessEventRequest(payloadJson);
         }
     } else if (payloadJson.action === "labeled") {
         if (checkNewIssueIsProjectRequest(payloadJson) && checkNewIssueIsApproved(payloadJson)) {
@@ -320,7 +320,7 @@ Kudos to you for contributing! cc @all-contributors please add @${payload.sender
     console.log(tag_result);
     console.log(excerpt_result);
 }
-function parseIssueAndProcessIssueRequest(payload) {
+function parseIssueAndProcessEventRequest(payload) {
     const body = payload.issue.body;
     var web_resultArray = getWebURLRx(body);
     var tag_resultArray = getTagRx(body);
@@ -340,7 +340,7 @@ function parseIssueAndProcessIssueRequest(payload) {
 Thank you @${payload.sender.login} for submitting a new battle ground for the __FlutterArsenal__.
 The Event at web link: [Event link](${web_url}) on __${date_result} is now awaiting approval from __admins__.
 
-Kudos to you for contributing! cc @all-contributors please add @${payload.sender.login} for content and ideas.
+Kudos to you for contributing! cc @all-contributors please add @${payload.sender.login} for event organization and ideas.
         `;
         sendUpdateToIssue(payload, issueMsgToSend);
     
