@@ -6,4 +6,6 @@ teaser:
 location: 
 tag: meetup
 excerpt: great event to network
+layout: fa_event
+
 ---
