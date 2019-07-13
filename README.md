@@ -58,7 +58,7 @@ Flutter Arsenal is a **categorized directory of libraries and tools for Flutter*
 Contributions of any kinds are welcome always. If you wish to add a feature or fix an existing bug on the Flutter Arsenal platform then please review our [**CONTRIBUTING GUIDE**](https://github.com/IAmSarthakVerma/FlutterArsenal/blob/master/CONTRIBUTING.md) and then [**SUBMIT A PULL REQUEST**](https://github.com/iamsarthakverma/flutterarsenal/pulls).
 
 ## Makers
-Thanks goes to these wonderful people and organizations:
+The minds behind this initiative:
 
 
 ### Organizations
@@ -83,6 +83,8 @@ Thanks goes to these wonderful people and organizations:
 
 
 ## Contributors
+
+Thanks goes to these wonderful people:
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
