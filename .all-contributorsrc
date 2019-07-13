@@ -9,7 +9,11 @@
       "login": "iamsarthakverma",
       "name": "Sarthak Verma",
       "avatar_url": "https://avatars3.githubusercontent.com/u/20480867?s=400&v=4",
-      "profile": "https://github.com/IAmSarthakVerma"
+      "profile": "https://github.com/IAmSarthakVerma",
+      "contributions": [
+        "content",
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,
