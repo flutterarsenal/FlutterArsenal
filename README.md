@@ -74,13 +74,25 @@ Thanks goes to these wonderful people and organizations:
 
 ### Individuals
 
+<table>
+  <tr>
+	      <td align="center"><a href="https://github.com/IAmSarthakVerma"><img src="https://avatars3.githubusercontent.com/u/20480867?s=400&v=4" width="100px;" alt="Sarthak Verma"/><br /><sub><b>Sarthak Verma</b></sub></a><br /></td>
+	      <td align="center"><a href="https://akriya.co.in"><img src="https://avatars2.githubusercontent.com/u/7826138?v=4" width="100px;" alt="Kartik Arora"/><br /><sub><b>Kartik Arora</b></sub></a><br /></td>
+	   </tr>
+</table>
+
+
+## Contributors
+
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/IAmSarthakVerma"><img src="https://avatars3.githubusercontent.com/u/20480867?s=400&v=4" width="100px;" alt="Sarthak Verma"/><br /><sub><b>Sarthak Verma</b></sub></a><br /><a href="#content-iamsarthakverma" title="Content">🖋</a> <a href="#ideas-iamsarthakverma" title="Ideas, Planning, & Feedback">🤔</a></td>
-  </tr>
+	      <td align="center"><a href="https://github.com/IAmSarthakVerma"><img src="https://avatars3.githubusercontent.com/u/20480867?s=400&v=4" width="100px;" alt="Sarthak Verma"/><br /><sub><b>Sarthak Verma</b></sub></a><br /></td>
+	      <td align="center"><a href="https://akriya.co.in"><img src="https://avatars2.githubusercontent.com/u/7826138?v=4" width="100px;" alt="Kartik Arora"/><br /><sub><b>Kartik Arora</b></sub></a><br /></td>
+	   </tr>
 </table>
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
+
 
