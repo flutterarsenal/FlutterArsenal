@@ -1,5 +1,8 @@
 ---
 layout: default
+pagination:
+enabled: true
+collection: projects
 ---
 <div class="position-relative">
   <!-- Hero for version -->
@@ -73,7 +76,7 @@ layout: default
   </section>
 </div>
 <section class="search-results m-5">
-    <div id="results" class="results"></div>
+  <div id="results" class="results"></div>
 </section>
 <section class="section-sm  m-5 ">
   <div class="row align-items-around justify-content-around">
@@ -116,7 +119,7 @@ layout: default
         </li>
       </ul>
     </div> -->
-   
+
     <!-- <h3>Top Voted Flutter Widgets</h3> -->
   </div>
   <h4 class="text-primary text-left">Top Flutter Widgets this month</h4>
@@ -124,7 +127,7 @@ layout: default
   <div class="bricklayer">
     {% assign projects = site.projects | sample: 2 | map: "title, tag" %}
     <pre> {{projects}}</pre>
-    {% for card_obj in site.projects limit:100 %}
+    {% for card_obj in paginator.posts limit:100 %}
     <div class="card card-lift--hover shadow border-0 my-5 mx-2 proj_{{card_obj.category}}">
       <div class="card-body py-4">
         <a href="{{card_obj.url}}" class="text-primary text-uppercase">{{ card_obj.title }} </a>
@@ -155,6 +158,35 @@ layout: default
     {% endfor %}
 
 
+  </div>
+  <div class="paginator-trail">
+    <nav aria-label="Page navigation">
+      <ul class="pagination justify-content-center">
+        {% if paginator.previous_page %}
+        <li class="page-item">
+          <a class="page-link" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">
+            <i class="fa fa-angle-left"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+        </li>
+        {% endif %}
+        {% for trail in paginator.page_trail %}
+        <li {% if page.url == trail.path %} class="page-item active" {% else %} class="page-item" {% endif %}>
+          <a class="page-link" href="{{ trail.path | prepend: site.baseurl }}"
+            title="{{trail.title}}">{{ trail.num }}</a>
+        </li>
+        {% endfor %}
+
+        {% if paginator.next_page %}
+        <li class="page-item">
+          <a class="page-link" href="{{ paginator.next_page_path | prepend: site.baseurl }}">
+            <i class="fa fa-angle-right"></i>
+            <span class="sr-only">Next</span>
+          </a>
+        </li>
+        {% endif %}
+      </ul>
+    </nav>
 
   </div>
 </section>

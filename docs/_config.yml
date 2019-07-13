@@ -219,8 +219,8 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
+# paginate: 5 # amount of posts to show
+# paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
@@ -233,6 +233,7 @@ plugins:
   - jemoji
   - jekyll-include-cache
   - liquid_pluralize
+  - jekyll-paginate-v2
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -322,6 +323,14 @@ collections:
      output: true
      permalink: /events/:name
      layout: single
+
+pagination:
+  enabled: true
+  debug: true
+  collection: 'projects'
+  per_page: 20
+  # permalink: '/projects/:num'
+
 
 ## Javascript
 head_scripts:

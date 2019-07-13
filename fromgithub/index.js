@@ -5,7 +5,7 @@ const config = require("./config.json");
 const fs = require('fs');
 const moment = require('moment');
 const http = require('http');
-
+var slugify = require('slugify')
 const express = require('express')
 const bodyParser = require('body-parser')
 const app = express()
@@ -41,12 +41,15 @@ app.post('/issueNew', function (req, res) {
             parseIssueAndProcessProjectRequest(payloadJson);
         } else if (checkNewIssueIsEventRequest(payloadJson)){
             console.log("Seems like a event issue");
-            parseIssueAndProcessProjectRequest(payloadJson);
+            parseIssueAndProcessEventRequest(payloadJson);
         }
     } else if (payloadJson.action === "labeled") {
         if (checkNewIssueIsProjectRequest(payloadJson) && checkNewIssueIsApproved(payloadJson)) {
             console.log("This is going to merge now ");
             parseIssueAndCommit(payloadJson);
+        } else if (checkNewIssueIsEventRequest(payloadJson) && checkNewIssueIsApproved(payloadJson)) {
+            console.log('adding additional event');
+            parseEventAndCommit(payloadJson);
         }
     }
     res.set('Content-Type', 'text/plain')
@@ -117,8 +120,9 @@ async function pubToFile(data, tag, excerpt) {
     md += addField('title', data.repository.name);
     md += addField('name', data.repository.name);
     md += addField('category', "Free");
-    md += addField('tag', data.repository.repositoryTopics.nodes.length > 0 ? data.repository.repositoryTopics.nodes[0].topic.name : '""');
-    md += addField('excerpt', '"' + data.repository.description.split('"').join('\'') + '"');
+    md += addField('tag', tag);
+    md += addField('excerpt', excerpt ? excerpt : '"' + data.repository.description.split('"').join('\'') + '"');
+    // md += addField('excerpt', '"' + data.repository.description.split('"').join('\'') + '"');
     md += addField('github', `https://github.com/${data.repository.nameWithOwner}`);
     md += addField('license', {
         "name": data.repository.licenseInfo.name,
@@ -164,6 +168,30 @@ async function pubToFile(data, tag, excerpt) {
 
 }
 
+async function pubEventToFile(data) {
+    console.log(data);
+    if (!data) {
+        return;
+    }
+    console.log("Done");
+    var md = '---\n';
+    md += addField('name', data.name);
+    md += addField('time', data.time);
+    md += addField('web_url', data.web_url);
+    md += addField('teaser', data.teaser);
+    md += addField('location', data.location);
+    md += addField('tag', data.tag);
+    md += addField('excerpt', data.excerpt);
+    md += '---';
+    md += '\n';
+    console.log('printing');
+
+    // fs.writeFileSync(`./output/fa_${data.repository.name}.md`, md)
+    var base64md = Buffer.from(md).toString('base64');
+    var gitreturn = await commitToGithub(base64md, `docs/_events/fa_git_${data.name}.md`);
+    console.log('published to github');
+    console.log(gitreturn);
+}
 
 function addField(feildName, feildValue) {
     if (Array.isArray(feildValue)) {
@@ -320,7 +348,7 @@ Kudos to you for contributing! cc @all-contributors please add @${payload.sender
     console.log(tag_result);
     console.log(excerpt_result);
 }
-function parseIssueAndProcessIssueRequest(payload) {
+function parseIssueAndProcessEventRequest(payload) {
     const body = payload.issue.body;
     var web_resultArray = getWebURLRx(body);
     var tag_resultArray = getTagRx(body);
@@ -338,9 +366,9 @@ function parseIssueAndProcessIssueRequest(payload) {
 
         var issueMsgToSend = `
 Thank you @${payload.sender.login} for submitting a new battle ground for the __FlutterArsenal__.
-The Event at web link: [Event link](${web_url}) on __${date_result} is now awaiting approval from __admins__.
+The Event at web link: [Event link](${web_url}) on __${date_result}__ is now awaiting approval from __admins__.
 
-Kudos to you for contributing! cc @all-contributors please add @${payload.sender.login} for content and ideas.
+Kudos to you for contributing! cc @all-contributors please add @${payload.sender.login} for event organization and ideas.
         `;
         sendUpdateToIssue(payload, issueMsgToSend);
     
@@ -355,7 +383,7 @@ function getGithubURLRx(body) {
     return github_resultArray;
 }
 function getWebURLRx(body) {
-    var web_re = /((ftp|http|https):\/\/)?(www.)?(?!.*(ftp|http|https|www.))[a-zA-Z0-9_-]+(\.[a-zA-Z]+)+((\/)[\w#]+)*(\/\w+\?[a-zA-Z0-9_]+=\w+(&[a-zA-Z0-9_]+=\w+)*)?$/gm;
+    var web_re = /(?<=link:).*?(?=<!--)/gm;
     var web_resultArray = web_re.exec(body);
     return web_resultArray;
 }
@@ -391,6 +419,12 @@ function getDateRx(body) {
     return date_resultArray;
 }
 
+function getLocationRx(body) {
+    var location_re = /(?<=location:).*?(?=<!--)/s;
+    var location_resultArray = location_re.exec(body);
+    return location_resultArray;
+}
+
 
 async function parseIssueAndCommit(payload) {
     const body = payload.issue.body;
@@ -423,6 +457,43 @@ Please help and support us in maintaining the biggest arsenal of Flutter weapons
     console.log(github_url);
     console.log(tag_result);
     console.log(excerpt_result);
+}
+
+async function parseEventAndCommit(payload) {
+    const body = payload.issue.body;
+
+    var web_resultArray = getWebURLRx(body);
+    var tag_resultArray = getTagRx(body);
+    var excerpt_resultArray = getExcerptRx(body);
+    var email_resultArray = getEmailRx(body);
+    var teaser_resultArray = getTeaserRx(body);
+    var date_resultArray = getDateRx(body);
+    var location_resultArray = getLocationRx(body);
+
+    var web_url = web_resultArray[0].trim();
+    var tag_result = tag_resultArray[0].trim();
+    var excerpt_result = excerpt_resultArray[0].trim();
+    var email_result = email_resultArray[0].trim();
+    var teaser_result = teaser_resultArray[0].trim();
+    var date_result = date_resultArray[0].trim();
+    var location_result = location_resultArray ? location_resultArray[0].trim() : "";
+
+    var issueMsgToSend = `
+Congratulations! @${payload.sender.login} your request for adding a new event is now approved and live on [__FlutterArsenal__](https://flutterarsenal.com).
+
+Please help and support us in maintaining the biggest arsenal of Flutter weapons.
+[![Tip Me via PayPal](https://img.shields.io/badge/PayPal-tip%20me-green.svg?logo=paypal)](https://www.paypal.me/karx01)
+    `;
+    pubEventToFile( {
+        name: slugify(payload.issue.title),
+        time: date_result,
+        web_url: web_url,
+        teaser: teaser_result,
+        location: location_result,
+        tag: tag_result,
+        excerpt: excerpt_result
+    });
+    sendUpdateToIssue(payload, issueMsgToSend);
 }
 
 
