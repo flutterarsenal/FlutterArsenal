@@ -328,8 +328,9 @@ pagination:
   enabled: true
   debug: true
   collection: 'projects'
-  per_page: 10
-  permalink: '/projects/:num'
+  per_page: 20
+  # permalink: '/projects/:num'
+
 
 ## Javascript
 head_scripts:
