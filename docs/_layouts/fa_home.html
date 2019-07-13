@@ -1,5 +1,8 @@
 ---
 layout: default
+pagination:
+  enabled: true
+  collection: projects
 ---
 <div class="position-relative">
   <!-- Hero for version -->
@@ -124,7 +127,7 @@ layout: default
   <div class="bricklayer">
     {% assign projects = site.projects | sample: 2 | map: "title, tag" %}
     <pre> {{projects}}</pre>
-    {% for card_obj in site.projects limit:100 %}
+    {% for card_obj in paginator.posts limit:100 %}
     <div class="card card-lift--hover shadow border-0 my-5 mx-2 proj_{{card_obj.category}}">
       <div class="card-body py-4">
         <a href="{{card_obj.url}}" class="text-primary text-uppercase">{{ card_obj.title }} </a>
@@ -154,7 +157,20 @@ layout: default
 
     {% endfor %}
 
-
+    {% if paginator.total_pages > 1 %}
+    <ul>
+      {% if paginator.previous_page %}
+      <li>
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Newer</a>
+      </li>
+      {% endif %}
+      {% if paginator.next_page %}
+      <li>
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older</a>
+      </li>
+      {% endif %}
+    </ul>
+    {% endif %}
 
   </div>
 </section>

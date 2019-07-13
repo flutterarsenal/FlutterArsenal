@@ -1,4 +1,5 @@
 source "https://rubygems.org" do
   gem 'liquid_pluralize'
+  gem 'jekyll-paginate-v2'
 end
 gemspec
