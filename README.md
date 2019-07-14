@@ -95,6 +95,7 @@ Thanks goes to these wonderful people:
   <tr>
     <td align="center"><a href="https://github.com/IAmSarthakVerma"><img src="https://avatars3.githubusercontent.com/u/20480867?s=400&v=4" width="100px;" alt="Sarthak Verma"/><br /><sub><b>Sarthak Verma</b></sub></a><br /><a href="#content-iamsarthakverma" title="Content">🖋</a> <a href="#ideas-iamsarthakverma" title="Ideas, Planning, & Feedback">🤔</a></td>
     <td align="center"><a href="http://www.linkedin.com/in/xsahil03x"><img src="https://avatars2.githubusercontent.com/u/25670178?v=4" width="100px;" alt="Sahil Kumar"/><br /><sub><b>Sahil Kumar</b></sub></a><br /><a href="#content-xsahil03x" title="Content">🖋</a> <a href="#ideas-xsahil03x" title="Ideas, Planning, & Feedback">🤔</a></td>
+    <td align="center"><a href="https://akriya.co.in"><img src="https://avatars2.githubusercontent.com/u/7826138?v=4" width="100px;" alt="Kartik Arora"/><br /><sub><b>Kartik Arora</b></sub></a><br /><a href="#content-karx" title="Content">🖋</a> <a href="#ideas-karx" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/flutterarsenal/FlutterArsenal/commits?author=karx" title="Code">💻</a></td>
   </tr>
 </table>
 
