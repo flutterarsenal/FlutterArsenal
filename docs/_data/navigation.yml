@@ -12,8 +12,8 @@ main:
     url: https://medium.com/flutterarsenal
   - title: "Contribute"
     url: /contribute
-  - title: "Contact"
-    url: /contact
+  - title: "About"
+    url: /about
 
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
