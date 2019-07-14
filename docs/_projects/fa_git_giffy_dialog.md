@@ -4,7 +4,7 @@ name: giffy_dialog
 category: Free
 tag: dialogs
 excerpt: A flutter package for creating Giffy and animated dialogs. (Supports flare animations too)
-teaser: https://user-images.githubusercontent.com/25670178/51350846-4504b680-1acf-11e9-8f9d-d6704742ff21.gi
+teaser: https://user-images.githubusercontent.com/25670178/51350846-4504b680-1acf-11e9-8f9d-d6704742ff21.gif
 github: https://github.com/xsahil03x/giffy_dialog
 license:
  name: MIT License
