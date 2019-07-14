@@ -27,7 +27,7 @@ contributors:
    image: https://avatars3.githubusercontent.com/u/9378033?v=4
    url: https://github.com/letsar
 registered_by:
- image: undefined
+ image: https://avatars2.githubusercontent.com/u/20480867?s=460&v=4
  url: https://github.com/IAmSarthakVerma
  on_date: Jul 14th 19
 layout: fa_project
