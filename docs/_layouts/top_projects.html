@@ -46,12 +46,20 @@ layout: default
                 <div class="card-body py-4">
                   <a href="{{card_obj.url}}" class="text-primary text-uppercase"> {{card_obj.title}} </a>
                   <a class="pull-right">
-                    <span class="fa fa-star star-checked"></span>
-                    <span class="fa fa-star star-checked"></span>
-                    <span class="fa fa-star star-checked"></span>
-                    <span class="fa fa-star "></span>
-                    <span class="fa fa-star "></span>
-                  </a>
+                      {% assign stars_to_show = 4 | plus: 0 %}
+                      {% if card_obj.rating %}
+                        {% assign stars_to_show = card_obj.rating | round | plus: 0 %}
+                      {% endif %}
+            
+                      {% assign stars_to_hide = 5 | minus: stars_to_show %}
+            
+                      {% for i in (1..stars_to_show) %}
+                      <span class="fa fa-star star-checked"></span>
+                      {% endfor %}
+                      {% for i in (1..stars_to_hide) %}
+                      <span class="fa fa-star "></span>
+                      {% endfor %}
+                    </a>
                   <div>
                     <a href="/tags/#{{card_obj.tag}}" class="badge badge-pill badge-primary">{{card_obj.tag}}</a>
                     <a href="#" class="badge badge-pill badge-success">{{card_obj.category}}</a>
