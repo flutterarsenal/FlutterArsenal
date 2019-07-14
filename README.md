@@ -29,7 +29,7 @@ Flutter Arsenal is a **categorized directory of libraries and tools for Flutter*
 
 ##### Adding Flutter Weapons and Events
 
-  - To add any Flutter Weapon on Flutter Arsenal, you just need to crete a new issue using the predefined template [HERE](https://github.com/flutterarsenal/FlutterArsenal/issues/new?assignees=&labels=project-request&template=request-to-add-project-to-flutterarsenal.md&title=%5BRequest%5D+Awesome+Flutter+Project).
+  - To add any Flutter Weapon on Flutter Arsenal, you just need to create a new issue using the predefined template [HERE](https://github.com/flutterarsenal/FlutterArsenal/issues/new?assignees=&labels=project-request&template=request-to-add-project-to-flutterarsenal.md&title=%5BRequest%5D+Awesome+Flutter+Project).
   - A list of the **TOP TEN Contributors** of the month (ranked on the basis of contributions made on Flutter Arsenal) can be viewed at the [Top Contributors](https://www.flutterarsenal.com/top-contributors) Page.
 
 
