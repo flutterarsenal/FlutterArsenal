@@ -4,7 +4,7 @@ name:  Photo View
 category: Free
 tag: images
 excerpt: 📸 Easy to use yet very customizable zoomable image widget for Flutter
-teaser: https://user
+teaser:  https://user-images.githubusercontent.com/6718144/56463745-45ec0380-63b0-11e9-8e56-0dba5deabb1a.gif
 github: https://github.com/renancaraujo/photo_view
 license:
  name: MIT License
