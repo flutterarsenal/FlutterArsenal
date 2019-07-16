@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-<!-- Please provide links and information in the following format -->
+<!-- Please provide links and information in the following format. Please add the content in between the ":" mark and the comment starting mark "<". DO NOT remove the comments. -->
 
 github:     <!-- Github repository link to the project -->
 tag:        <!-- one tag to add to your project -->
