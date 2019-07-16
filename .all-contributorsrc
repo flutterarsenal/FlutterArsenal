@@ -46,6 +46,16 @@
         "ideas",
         "content"
       ]
+    },
+    {
+      "login": "renancaraujo",
+      "name": "Renan",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/6718144?v=4",
+      "profile": "http://caraujo.me",
+      "contributions": [
+        "content",
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,
