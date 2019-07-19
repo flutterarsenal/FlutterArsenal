@@ -2,7 +2,7 @@
 title:  Flutter BeforeAfter Widget
 name:  Flutter BeforeAfter Widget
 category: Free
-tag: flutter
+tag: UI Helper
 excerpt: A flutter package which makes it easier to display the difference between two images.
 teaser: https://user-images.githubusercontent.com/25670178/61337857-a3c7a480-a854-11e9-9582-87d7f5592007.gif
 github: https://github.com/xsahil03x/before_after
