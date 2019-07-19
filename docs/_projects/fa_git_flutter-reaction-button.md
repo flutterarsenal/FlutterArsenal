@@ -2,18 +2,18 @@
 title:  Flutter reaction button
 name:  Flutter reaction button
 category: Free
-tag: reaction
-excerpt: Flutter button reaction . it is fully customizable widget like facebook reaction button for flutter
-teaser: https://raw.githubusercontent.com/GeekAbdelouahed/flutter-reaction-button/master/images/Flutter%20Reaction%20Button%20Preview.png
+tag: button
+excerpt: Flutter button reaction plugin, it is fully customizable widget like facebook reaction button for flutter
+teaser: https://raw.githubusercontent.com/GeekAbdelouahed/flutter-reaction-button/master/images/Flutter%20Reaction%20Button%20Preview.gif
 github: https://github.com/GeekAbdelouahed/flutter-reaction-button
 license:
  name: MIT License
  url: http://choosealicense.com/licenses/mit/
 rating: 5
 version: NA
-last_updated: Jul 18, 2019
+last_updated: Jul 19, 2019
 owner:
- profile_image: https://avatars0.githubusercontent.com/u/22131872?v=4
+ profile_image: https://avatars1.githubusercontent.com/u/22131872?v=4
  name: GeekAbdelouahed
  url: https://github.com/GeekAbdelouahed
 contributors:
