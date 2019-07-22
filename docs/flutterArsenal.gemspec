@@ -1,12 +1,12 @@
 # coding: utf-8
 
 Gem::Specification.new do |spec|
-  spec.name                    = "minimal-mistakes-jekyll"
-  spec.version                 = "4.16.4"
-  spec.authors                 = ["Michael Rose"]
+  spec.name                    = "Flutter-arsenal"
+  spec.version                 = "1.0.1"
+  spec.authors                 = ["Kartik Arora", "Sarthak Verma"]
 
-  spec.summary                 = %q{A flexible two-column Jekyll theme.}
-  spec.homepage                = "https://github.com/mmistakes/minimal-mistakes"
+  spec.summary                 = %q{A categorized directory of libraries and tools for Flutter.}
+  spec.homepage                = "https://github.com/flutterarsenal/FlutterArsenal"
   spec.license                 = "MIT"
 
   spec.metadata["plugin_type"] = "theme"
