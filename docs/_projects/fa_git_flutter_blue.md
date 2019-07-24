@@ -136,14 +136,16 @@ characteristic.value.listen((value) {
 ```
 
 ## Reference
-### FlutterBlue API
-|                  |      Android       |         iOS          |             Description            |
+### FlutterBlue API]
+
+| State |      Android       |         iOS          |             Description            |
 | :--------------- | :----------------: | :------------------: |  :-------------------------------- |
 | scan             | :white_check_mark: |  :white_check_mark:  | Starts a scan for Bluetooth Low Energy devices. |
 | state            | :white_check_mark: |  :white_check_mark:  | Gets the current state of the Bluetooth Adapter. |
 | onStateChanged   | :white_check_mark: |  :white_check_mark:  | Stream of state changes for the Bluetooth Adapter. |
 
 ### BluetoothDevice API
+
 |                             |       Android        |         iOS          |             Description            |
 | :-------------------------- | :------------------: | :------------------: |  :-------------------------------- |
 | connect                     |  :white_check_mark:  |  :white_check_mark:  | Establishes a connection to the device. |
@@ -154,6 +156,7 @@ characteristic.value.listen((value) {
 | onStateChanged              |  :white_check_mark:  |  :white_check_mark:  | Notifies of state changes for the device. |
 
 ### BluetoothCharacteristic API
+
 |                             |       Android        |         iOS          |             Description            |
 | :-------------------------- | :------------------: | :------------------: |  :-------------------------------- |
 | read                        |  :white_check_mark:  |  :white_check_mark:  | Retrieves the value of the characteristic.  |
@@ -162,6 +165,8 @@ characteristic.value.listen((value) {
 | value                       |  :white_check_mark:  |  :white_check_mark:  | Stream of characteristic's value when changed. |
 
 ### BluetoothDescriptor API
+
+
 |                             |       Android        |         iOS          |             Description            |
 | :-------------------------- | :------------------: | :------------------: |  :-------------------------------- |
 | read                        |  :white_check_mark:  |  :white_check_mark:  | Retrieves the value of the descriptor.  |
