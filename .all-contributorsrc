@@ -56,6 +56,15 @@
         "content",
         "ideas"
       ]
+    },
+    {
+      "login": "VincentTam",
+      "name": "Vincent Tam",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/5748535?v=4",
+      "profile": "https://vincenttam.gitlab.io/",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,
