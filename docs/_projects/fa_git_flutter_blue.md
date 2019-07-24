@@ -136,7 +136,7 @@ characteristic.value.listen((value) {
 ```
 
 ## Reference
-### FlutterBlue API]
+### FlutterBlue API
 
 | State |      Android       |         iOS          |             Description            |
 | :--------------- | :----------------: | :------------------: |  :-------------------------------- |
