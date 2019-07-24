@@ -98,6 +98,7 @@ Thanks goes to these wonderful people:
     <td align="center"><a href="https://akriya.co.in"><img src="https://avatars2.githubusercontent.com/u/7826138?v=4" width="100px;" alt="Kartik Arora"/><br /><sub><b>Kartik Arora</b></sub></a><br /><a href="#content-karx" title="Content">🖋</a> <a href="#ideas-karx" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/flutterarsenal/FlutterArsenal/commits?author=karx" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/javico2609"><img src="https://avatars0.githubusercontent.com/u/12940555?v=4" width="100px;" alt="Javier"/><br /><sub><b>Javier</b></sub></a><br /><a href="#tool-javico2609" title="Tools">🔧</a> <a href="#ideas-javico2609" title="Ideas, Planning, & Feedback">🤔</a> <a href="#content-javico2609" title="Content">🖋</a></td>
     <td align="center"><a href="http://caraujo.me"><img src="https://avatars1.githubusercontent.com/u/6718144?v=4" width="100px;" alt="Renan"/><br /><sub><b>Renan</b></sub></a><br /><a href="#content-renancaraujo" title="Content">🖋</a> <a href="#ideas-renancaraujo" title="Ideas, Planning, & Feedback">🤔</a></td>
+    <td align="center"><a href="https://vincenttam.gitlab.io/"><img src="https://avatars0.githubusercontent.com/u/5748535?v=4" width="100px;" alt="Vincent Tam"/><br /><sub><b>Vincent Tam</b></sub></a><br /><a href="https://github.com/flutterarsenal/FlutterArsenal/issues?q=author%3AVincentTam" title="Bug reports">🐛</a></td>
   </tr>
 </table>
 
