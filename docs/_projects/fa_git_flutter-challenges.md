@@ -7,8 +7,8 @@ excerpt: 18 templates, Redux, CRUD Sqlite and Firebase, http request, webview, g
 teaser: https://github.com/javico2609/flutter-challenges/raw/master/ss8.png
 github: https://github.com/javico2609/flutter-challenges
 license:
- name: 
- url: 
+ name: MIT License
+ url: https://github.com/javico2609/flutter-challenges/blob/master/LICENSE
 rating: 5
 version: NA
 last_updated: Jul 15, 2019
