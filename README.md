@@ -99,6 +99,7 @@ Thanks goes to these wonderful people:
     <td align="center"><a href="https://github.com/javico2609"><img src="https://avatars0.githubusercontent.com/u/12940555?v=4" width="100px;" alt="Javier"/><br /><sub><b>Javier</b></sub></a><br /><a href="#tool-javico2609" title="Tools">🔧</a> <a href="#ideas-javico2609" title="Ideas, Planning, & Feedback">🤔</a> <a href="#content-javico2609" title="Content">🖋</a></td>
     <td align="center"><a href="http://caraujo.me"><img src="https://avatars1.githubusercontent.com/u/6718144?v=4" width="100px;" alt="Renan"/><br /><sub><b>Renan</b></sub></a><br /><a href="#content-renancaraujo" title="Content">🖋</a> <a href="#ideas-renancaraujo" title="Ideas, Planning, & Feedback">🤔</a></td>
     <td align="center"><a href="https://vincenttam.gitlab.io/"><img src="https://avatars0.githubusercontent.com/u/5748535?v=4" width="100px;" alt="Vincent Tam"/><br /><sub><b>Vincent Tam</b></sub></a><br /><a href="https://github.com/flutterarsenal/FlutterArsenal/issues?q=author%3AVincentTam" title="Bug reports">🐛</a> <a href="https://github.com/flutterarsenal/FlutterArsenal/commits?author=VincentTam" title="Code">💻</a></td>
+    <td align="center"><a href="http://accountSuspendedDueToInsufficientBalance"><img src="https://avatars2.githubusercontent.com/u/43071332?v=4" width="100px;" alt="MANOJ KUMAWAT"/><br /><sub><b>MANOJ KUMAWAT</b></sub></a><br /><a href="#content-manojkumawat003" title="Content">🖋</a> <a href="#ideas-manojkumawat003" title="Ideas, Planning, & Feedback">🤔</a></td>
   </tr>
 </table>
 
