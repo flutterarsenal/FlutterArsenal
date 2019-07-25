@@ -1,10 +1,10 @@
 ---
-title:  Awesome Flutter Project
-name:  Awesome Flutter Project
+title:  Awesome login
+name:  Awesome login
 category: Free
 tag: awesome login
 excerpt: An awesome login screen with some animation stuff.
-teaser: https://github.com/manojkumawat003/awesome_login/blob/master/awesome_login.gif
+teaser: https://github.com/manojkumawat003/awesome_login/blob/master/awesome_login.gif?raw=true
 github: https://github.com/manojkumawat003/awesome_login
 license:
  name: 
