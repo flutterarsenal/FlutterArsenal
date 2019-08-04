@@ -101,6 +101,9 @@ Thanks goes to these wonderful people:
     <td align="center"><a href="https://vincenttam.gitlab.io/"><img src="https://avatars0.githubusercontent.com/u/5748535?v=4" width="100px;" alt="Vincent Tam"/><br /><sub><b>Vincent Tam</b></sub></a><br /><a href="https://github.com/flutterarsenal/FlutterArsenal/issues?q=author%3AVincentTam" title="Bug reports">🐛</a> <a href="https://github.com/flutterarsenal/FlutterArsenal/commits?author=VincentTam" title="Code">💻</a></td>
     <td align="center"><a href="http://accountSuspendedDueToInsufficientBalance"><img src="https://avatars2.githubusercontent.com/u/43071332?v=4" width="100px;" alt="MANOJ KUMAWAT"/><br /><sub><b>MANOJ KUMAWAT</b></sub></a><br /><a href="#content-manojkumawat003" title="Content">🖋</a> <a href="#ideas-manojkumawat003" title="Ideas, Planning, & Feedback">🤔</a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="http://www.ayushpahwa.me"><img src="https://avatars3.githubusercontent.com/u/8526215?v=4" width="100px;" alt="Ayush Pahwa"/><br /><sub><b>Ayush Pahwa</b></sub></a><br /><a href="#financial-ayushpahwa" title="Financial">💵</a></td>
+  </tr>
 </table>
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
