@@ -76,6 +76,15 @@
         "content",
         "ideas"
       ]
+    },
+    {
+      "login": "ayushpahwa",
+      "name": "Ayush Pahwa",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/8526215?v=4",
+      "profile": "http://www.ayushpahwa.me",
+      "contributions": [
+        "financial"
+      ]
     }
   ],
   "contributorsPerLine": 7,
