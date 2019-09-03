@@ -103,6 +103,7 @@ Thanks goes to these wonderful people:
   </tr>
   <tr>
     <td align="center"><a href="http://www.ayushpahwa.me"><img src="https://avatars3.githubusercontent.com/u/8526215?v=4" width="100px;" alt="Ayush Pahwa"/><br /><sub><b>Ayush Pahwa</b></sub></a><br /><a href="#financial-ayushpahwa" title="Financial">💵</a></td>
+    <td align="center"><a href="https://ayushagarwal.ml"><img src="https://avatars2.githubusercontent.com/u/34043023?v=4" width="100px;" alt="Ayush Agarwal"/><br /><sub><b>Ayush Agarwal</b></sub></a><br /><a href="#content-aagarwal1012" title="Content">🖋</a> <a href="#ideas-aagarwal1012" title="Ideas, Planning, & Feedback">🤔</a></td>
   </tr>
 </table>
 
