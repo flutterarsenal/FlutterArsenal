@@ -85,6 +85,16 @@
       "contributions": [
         "financial"
       ]
+    },
+    {
+      "login": "aagarwal1012",
+      "name": "Ayush Agarwal",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/34043023?v=4",
+      "profile": "https://ayushagarwal.ml",
+      "contributions": [
+        "content",
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,
