@@ -34,3 +34,47 @@
   max-width: 100%;
 }
 
+
+
+
+
+#donate-button {
+  display: inline-block;
+  margin: 20px;
+  position: relative;
+  text-decoration: none;
+  color: #FFF
+}
+
+.donate {
+  // background:linear-gradient(150deg, 15%#d782d9, #8f6ed5 70%, #281483  94%);
+  background-position: 0 0;
+  background-size: 200% 100%;
+  border-radius: 4px;
+  color: #fff;
+  padding: 15px 65px 15px 15px;
+  text-shadow: 1px 1px 5px #666;
+  -webkit-transition: all 800ms;
+  transition: all 800ms;
+}
+.donate:after {
+  border-left: 1px solid #004f3a;
+  color: #003527;
+  content: "\f004";
+  font: 20px "FontAwesome";
+  padding: 10px 0;
+  padding-left: 15px;
+  position: absolute;
+  right: 16px;
+  top: 7px;
+  -webkit-transition: all 600ms 200ms;
+  transition: all 600ms 200ms;
+}
+.donate:hover {
+  background-position: -100% 0;
+}
+.donate:hover:after {
+  border-left: 1px solid #008260;
+  color: #fff;
+  text-shadow: 0 0 10px #000;
+}
