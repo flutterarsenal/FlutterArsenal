@@ -95,6 +95,16 @@
         "content",
         "ideas"
       ]
+    },
+    {
+      "login": "Sub6Resources",
+      "name": "Matthew Whitaker",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/19274761?v=4",
+      "profile": "https://matthewwhitaker.me",
+      "contributions": [
+        "content",
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,
