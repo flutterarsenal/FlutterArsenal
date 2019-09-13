@@ -4,7 +4,7 @@ name:  Liquid Pull To Refresh
 category: Free
 tag: refresh
 excerpt: 🔁 A custom refresh indicator for flutter.
-teaser: https://github.com/aagarwal1012/Liquid-Pull-To-Refresh/blob/master/display/liquid_false.gif
+teaser: https://raw.githubusercontent.com/aagarwal1012/Liquid-Pull-To-Refresh/master/display/liquid_false.gif
 github: https://github.com/aagarwal1012/Liquid-Pull-To-Refresh
 license:
  name: MIT License
