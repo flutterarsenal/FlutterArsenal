@@ -4,7 +4,7 @@ name:  'Flutter Bitmap: Image editing with a help from the FFI'
 category: Free
 tag: Image
 excerpt: A minimalist Flutter package to perform fast bitmaps operations. The focus here is to provide a cool bitmap manipulation interface.
-teaser: 'https://github.com/renancaraujo/bitmap/blob/master/transform.jpg'
+teaser: 'https://raw.githubusercontent.com/renancaraujo/bitmap/master/transform.jpg'
 github: 'https://github.com/renancaraujo/bitmap'
 license:
  name: MIT License
@@ -27,7 +27,7 @@ registered_by:
 layout: fa_project
 ---
 
-![transform image dog](https://github.com/renancaraujo/bitmap/blob/master/transform.jpg)
+![transform image dog](https://raw.githubusercontent.com/renancaraujo/bitmap/master/transform.jpg)
 
 # Flutter Bitmap
 
