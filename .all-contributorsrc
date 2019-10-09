@@ -105,6 +105,16 @@
         "content",
         "ideas"
       ]
+    },
+    {
+      "login": "matthewfx",
+      "name": "Mat Nuckowski",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/3390107?v=4",
+      "profile": "http://www.nuckowski.com",
+      "contributions": [
+        "content",
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,
