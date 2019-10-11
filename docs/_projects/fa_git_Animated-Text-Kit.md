@@ -37,7 +37,7 @@ layout: fa_project
 ---
 <div align="center"><img src="https://github.com/aagarwal1012/Animated-Text-Kit/blob/master/display/cover.gif?raw=true"/></div>
 
-# <div align="center">Animated Text Kit</div>
+# Animated Text Kit
 <div align="center">A flutter package which contains a collection of some cool and awesome text animations.</div><br>
 
 <div align="center">
