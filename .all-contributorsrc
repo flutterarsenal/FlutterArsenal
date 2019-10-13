@@ -134,6 +134,16 @@
         "content",
         "ideas"
       ]
+    },
+    {
+      "login": "mauriciotogneri",
+      "name": "Mauricio Togneri",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/619593?v=4",
+      "profile": "https://mauriciotogneri.com",
+      "contributions": [
+        "content",
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,
