@@ -108,6 +108,7 @@ Thanks goes to these wonderful people:
     <td align="center"><a href="http://www.nuckowski.com"><img src="https://avatars2.githubusercontent.com/u/3390107?v=4" width="100px;" alt="Mat Nuckowski"/><br /><sub><b>Mat Nuckowski</b></sub></a><br /><a href="#content-matthewfx" title="Content">🖋</a> <a href="#ideas-matthewfx" title="Ideas, Planning, & Feedback">🤔</a></td>
     <td align="center"><a href="https://www.youtube.com/c/NitishKumarSingh"><img src="https://avatars2.githubusercontent.com/u/15886737?v=4" width="100px;" alt="Nitish Kumar Singh"/><br /><sub><b>Nitish Kumar Singh</b></sub></a><br /><a href="https://github.com/flutterarsenal/FlutterArsenal/commits?author=nitishk72" title="Code">💻</a></td>
     <td align="center"><a href="https://www.skyost.eu"><img src="https://avatars1.githubusercontent.com/u/3882599?v=4" width="100px;" alt="Hugo Delaunay"/><br /><sub><b>Hugo Delaunay</b></sub></a><br /><a href="#content-Skyost" title="Content">🖋</a> <a href="#ideas-Skyost" title="Ideas, Planning, & Feedback">🤔</a></td>
+    <td align="center"><a href="https://mauriciotogneri.com"><img src="https://avatars3.githubusercontent.com/u/619593?v=4" width="100px;" alt="Mauricio Togneri"/><br /><sub><b>Mauricio Togneri</b></sub></a><br /><a href="#content-mauriciotogneri" title="Content">🖋</a> <a href="#ideas-mauriciotogneri" title="Ideas, Planning, & Feedback">🤔</a></td>
   </tr>
 </table>
 
