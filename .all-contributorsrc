@@ -124,6 +124,16 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "Skyost",
+      "name": "Hugo Delaunay",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/3882599?v=4",
+      "profile": "https://www.skyost.eu",
+      "contributions": [
+        "content",
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,
