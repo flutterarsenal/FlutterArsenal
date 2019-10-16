@@ -4,7 +4,7 @@ name:  Sleek circular slider
 category: Free
 tag: Slider
 excerpt: The highly customizable circular slider/progress bar
-teaser: 
+teaser: https://user-images.githubusercontent.com/3390107/66375630-577ea180-ea0a-11e9-9b49-daa970b17906.GIF
 github: https://github.com/matthewfx/sleek_circular_slider
 license:
  name: MIT License
