@@ -144,6 +144,16 @@
         "content",
         "ideas"
       ]
+    },
+    {
+      "login": "rodrigordgfs",
+      "name": "Rodrigo Shinoda",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/32286127?v=4",
+      "profile": "https://github.com/rodrigordgfs",
+      "contributions": [
+        "content",
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,
