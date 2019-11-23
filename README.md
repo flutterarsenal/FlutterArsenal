@@ -110,6 +110,9 @@ Thanks goes to these wonderful people:
     <td align="center"><a href="https://www.skyost.eu"><img src="https://avatars1.githubusercontent.com/u/3882599?v=4" width="100px;" alt="Hugo Delaunay"/><br /><sub><b>Hugo Delaunay</b></sub></a><br /><a href="#content-Skyost" title="Content">🖋</a> <a href="#ideas-Skyost" title="Ideas, Planning, & Feedback">🤔</a></td>
     <td align="center"><a href="https://mauriciotogneri.com"><img src="https://avatars3.githubusercontent.com/u/619593?v=4" width="100px;" alt="Mauricio Togneri"/><br /><sub><b>Mauricio Togneri</b></sub></a><br /><a href="#content-mauriciotogneri" title="Content">🖋</a> <a href="#ideas-mauriciotogneri" title="Ideas, Planning, & Feedback">🤔</a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/rodrigordgfs"><img src="https://avatars0.githubusercontent.com/u/32286127?v=4" width="100px;" alt="Rodrigo Shinoda"/><br /><sub><b>Rodrigo Shinoda</b></sub></a><br /><a href="#content-rodrigordgfs" title="Content">🖋</a> <a href="#ideas-rodrigordgfs" title="Ideas, Planning, & Feedback">🤔</a></td>
+  </tr>
 </table>
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
