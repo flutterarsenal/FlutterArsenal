@@ -154,11 +154,22 @@
         "content",
         "ideas"
       ]
+    },
+    {
+      "login": "arleyhr",
+      "name": "Arley HR",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/3029332?v=4",
+      "profile": "http://arleyhr.dev",
+      "contributions": [
+        "content",
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,
   "projectName": "FlutterArsenal",
   "projectOwner": "flutterarsenal",
   "repoType": "github",
-  "repoHost": "https://github.com"
+  "repoHost": "https://github.com",
+  "skipCi": true
 }
