@@ -140,5 +140,6 @@
   "projectName": "FlutterArsenal",
   "projectOwner": "flutterarsenal",
   "repoType": "github",
-  "repoHost": "https://github.com"
+  "repoHost": "https://github.com",
+  "skipCi": true
 }
