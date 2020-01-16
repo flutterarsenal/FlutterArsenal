@@ -154,11 +154,22 @@
         "content",
         "ideas"
       ]
+    },
+    {
+      "login": "klaszlo8207",
+      "name": "KL",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/21121078?v=4",
+      "profile": "https://github.com/klaszlo8207",
+      "contributions": [
+        "content",
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,
   "projectName": "FlutterArsenal",
   "projectOwner": "flutterarsenal",
   "repoType": "github",
-  "repoHost": "https://github.com"
+  "repoHost": "https://github.com",
+  "skipCi": true
 }
