@@ -154,11 +154,22 @@
         "content",
         "ideas"
       ]
+    },
+    {
+      "login": "hemilpanchiwala",
+      "name": "Hemil Panchiwala",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/42446679?v=4",
+      "profile": "http://hemilpanchiwala.github.io",
+      "contributions": [
+        "content",
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,
   "projectName": "FlutterArsenal",
   "projectOwner": "flutterarsenal",
   "repoType": "github",
-  "repoHost": "https://github.com"
+  "repoHost": "https://github.com",
+  "skipCi": true
 }
