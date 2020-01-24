@@ -4,7 +4,7 @@
 [![LICENSE](https://img.shields.io/github/license/karx/FlutterArsenal.svg)](https://raw.githubusercontent.com/karx/homepage/master/LICENSE)
 [![Jekyll](https://img.shields.io/badge/jekyll-%3E%3D%203.6-blue.svg)](https://jekyllrb.com/)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f76ec8e6-bff9-4717-8446-226d701def0c/deploy-status)](https://app.netlify.com/sites/flutterarsenal/deploys)
-[![All Authors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors) 
+[![All Authors](https://img.shields.io/badge/all_contributors-15-orange.svg?style=flat-square)](#contributors) 
 
 Flutter Arsenal is a **categorized directory of libraries and tools for Flutter**. These libraries and tools are so-called **WEAPONS** of this **ARSENAL**.
 
