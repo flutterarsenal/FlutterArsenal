@@ -154,11 +154,22 @@
         "content",
         "ideas"
       ]
+    },
+    {
+      "login": "huextrat",
+      "name": "Hugo EXTRAT",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/22995315?v=4",
+      "profile": "https://www.hugoextrat.com",
+      "contributions": [
+        "content",
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,
   "projectName": "FlutterArsenal",
   "projectOwner": "flutterarsenal",
   "repoType": "github",
-  "repoHost": "https://github.com"
+  "repoHost": "https://github.com",
+  "skipCi": true
 }
